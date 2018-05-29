@@ -5,19 +5,21 @@ import torch.nn.functional as F
 import numpy as np
 import pandas as pd
 
-EXP_FILE=pd.read_csv('test.csv')
+
 # Hyper Parameters
+EPI_FILE = pd.read_csv('test.csv')
+N_ACTIONS = 16
+N_STATES = EPI_FILE.columns.size - 3
+print("N_ACTIONS:", N_ACTIONS)
 BATCH_SIZE = 10
 LR = 0.01                   # learning rate
 EPSILON = 0.9               # greedy policy
 GAMMA = 0.9                 # reward discount
 TARGET_REPLACE_ITER = 10   # target update frequency
 MEMORY_CAPACITY = 100
-N_ACTIONS = 16
-N_STATES = EXP_FILE.columns.size-3
-print("N_ACTIONS:", N_ACTIONS)
-print("N_STATES:", N_STATES)
-N_EXP=EXP_FILE.iloc[:,0].size
+N_EPISODE=100
+N_EXP_TOL=200 #
+
 
 class Net(nn.Module):
     def __init__(self, ):
@@ -45,7 +47,7 @@ class DQN(object):
         self.loss_func = nn.MSELoss()
 
     def choose_action(self, x):
-        action=np.array(EXP_FILE.ix[x, 1])
+        action=np.array(EPI_FILE.ix[x, 1])
         return action
 
     def store_transition(self, s, a, r, s_):
@@ -72,8 +74,9 @@ class DQN(object):
         #print("b_a=",b_a)
         # q_eval w.r.t the action in experience
         q_eval = self.eval_net(b_s).gather(1, b_a)  # shape (batch, 1)//value of the chosen action
-        q_next = self.target_net(b_s_).detach()     # detach from graph, don't backpropagate
-        q_target = b_r + GAMMA * q_next.max(1)[0].view(BATCH_SIZE, 1)   # shape (batch, 1)/value of all the actions
+        q_next = self.target_net(b_s_).detach()     # detach from graph, don't backpropagate/value of all the actions
+        print("Q_next=",q_next)
+        q_target = b_r + GAMMA * q_next.max(1)[0].view(BATCH_SIZE, 1)   # shape (batch, 1)
         loss = self.loss_func(q_eval, q_target)
 
         self.optimizer.zero_grad()
@@ -83,9 +86,12 @@ class DQN(object):
 dqn = DQN()
 
 print('\nCollecting experience...')
-for i_episode in range(1):
+for i_episode in range(N_EPISODE):
+    str_filename="data"+str(i_episode)+".csv"
+    EPI_FILE = pd.read_csv('test.csv')# to modifify later
+    N_EXP = EPI_FILE.iloc[:, 0].size
     s_i = 1
-    s=np.array(EXP_FILE.ix[s_i, 2:N_STATES+2])
+    s=np.array(EPI_FILE.ix[s_i, 2:N_STATES+2])
     # print("s_i=",s_i)
     # print("s=",EXP_FILE.ix[s_i, 2:N_STATES+2])
     ep_r = 0
@@ -98,9 +104,11 @@ for i_episode in range(1):
         # print("a=", a)
         # print("s=", EXP_FILE.ix[s_i, 2:N_STATES + 2])
 
-        r = np.array(EXP_FILE.ix[s_i, N_STATES+2])
+        r = np.array(EPI_FILE.ix[s_i, N_STATES+2])
         s_i=s_i+1
-        s_next = np.array(EXP_FILE.ix[s_i, 2:N_STATES+2])
+        if s_i>N_EXP_TOL:
+            break
+        s_next = np.array(EPI_FILE.ix[s_i, 2:N_STATES+2])
         # modify the reward
 
 
@@ -111,5 +119,6 @@ for i_episode in range(1):
             dqn.learn()
             print('Ep: ', i_episode,
                 '| Ep_r: ', round(ep_r, 2))
+            print("weight=",dqn.target_net.fc1.weight)
 
         s = s_next
