@@ -87,8 +87,11 @@ dqn = DQN()
 
 print('\nCollecting experience...')
 for i_episode in range(N_EPISODE):
-    str_filename="data"+str(i_episode)+".csv"
-    EPI_FILE = pd.read_csv('test.csv')# to modifify later
+    str_filename="dataHorizon/out/up_"+str(i_episode)+".csv"
+    try:
+        EPI_FILE = pd.read_csv(str_filename)
+    except FileNotFoundError:
+        continue
     N_EXP = EPI_FILE.iloc[:, 0].size
     s_i = 1
     s=np.array(EPI_FILE.ix[s_i, 2:N_STATES+2])
