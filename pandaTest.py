@@ -1,5 +1,5 @@
 import pandas as pd
-import numpy as np
+
 EXP_FILE=pd.read_csv('test.csv')
 N_ACTIONS = 16
 N_STATES = EXP_FILE.columns.size-3
@@ -18,3 +18,4 @@ print("N_state=",N_STATES)
 print('state=',s)
 r = EXP_FILE.ix[3, N_STATES+2]
 print('r=',r)
+

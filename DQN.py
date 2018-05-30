@@ -125,3 +125,6 @@ for i_episode in range(N_EPISODE):
             print("weight=",dqn.target_net.fc1.weight)
 
         s = s_next
+
+torch.save(dqn.eval_net, 'eval_net.pkl')
+torch.save(dqn.target_net, 'target_net.pkl')
