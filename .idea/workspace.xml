@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="004a9823-bfef-4d7e-b9d9-17b50b94a9b3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DQN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandaTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/pandaTest.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +15,7 @@
     <SUITE FILE_PATH="coverage/HRIDQN$pandaTest.coverage" NAME="pandaTest Coverage Results" MODIFIED="1527344924382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HRIDQN$osTest.coverage" NAME="osTest Coverage Results" MODIFIED="1527666834863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataHorizon" />
     <SUITE FILE_PATH="coverage/HRIDQN$dqn.coverage" NAME="dqn Coverage Results" MODIFIED="1527667294825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/HRIDQN$traitement.coverage" NAME="traitement Coverage Results" MODIFIED="1527608525851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataHorizon" />
+    <SUITE FILE_PATH="coverage/HRIDQN$traitement.coverage" NAME="traitement Coverage Results" MODIFIED="1527671137867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataHorizon" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -33,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="record_2018_02_25__06_33.csv" pinned="false" current-in-tab="true">
+      <file leaf-file-name="record_2018_02_25__06_33.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataHorizon/record_2018_02_25__06_33.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
@@ -42,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="traitement.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="traitement.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dataHorizon/traitement.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+            <state relative-caret-position="345">
+              <caret line="157" column="28" lean-forward="true" selection-start-line="157" selection-start-column="28" selection-end-line="157" selection-end-column="28" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -117,6 +115,17 @@
             <path>
               <item name="HRIDQN" type="b2602c69:ProjectViewProjectNode" />
               <item name="HRIDQN" type="462c0819:PsiDirectoryNode" />
+              <item name="dataHorizon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HRIDQN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HRIDQN" type="462c0819:PsiDirectoryNode" />
+              <item name="dataHorizon" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HRIDQN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HRIDQN" type="462c0819:PsiDirectoryNode" />
               <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -149,7 +158,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dqn">
+  <component name="RunManager" selected="Python.traitement">
     <configuration name="dqn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="HRIDQN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -234,9 +243,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.traitement" />
         <item itemvalue="Python.dqn" />
         <item itemvalue="Python.osTest" />
-        <item itemvalue="Python.traitement" />
         <item itemvalue="Python.pandaTest" />
       </list>
     </recent_temporary>
@@ -489,16 +498,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataHorizon/traitement.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pandaTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -525,6 +524,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataHorizon/traitement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="157" column="28" lean-forward="true" selection-start-line="157" selection-start-column="28" selection-end-line="157" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
