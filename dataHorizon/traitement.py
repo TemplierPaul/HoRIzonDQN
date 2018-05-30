@@ -94,13 +94,13 @@ for nom in os.listdir('.'):
 
         mydata['keyboard'] = pd.Series([0] * len(mydata.index), index=mydata.index)
 
-        # Outpu
+        # Output
         mydata['man_auto'] = pd.Series([0] * len(mydata.index), index=mydata.index)
         mydata['auto_man'] = pd.Series([0] * len(mydata.index), index=mydata.index)
 
         for i in range(0, 8):
             mydata['alarm' + str(i)] = pd.Series([0] * len(mydata.index), index=mydata.index)
-
+        #rewards
         mydata['score'] = pd.Series([0] * len(mydata.index), index=mydata.index)
 
         onfire = 0
@@ -109,7 +109,7 @@ for nom in os.listdir('.'):
         for ligne in mydata.iterrows():
             info = ligne[1]
 
-            #            print (info)
+            #print (info)
 
             if int(info[1]) > auto:
                 auto = int(info[1])
@@ -126,7 +126,6 @@ for nom in os.listdir('.'):
             for i in range(0, 9):
                 if trees[i] == 'true':
                     mydata.at[ligne[0], 'tree' + str(i)] = 1
-
             if trees.count('true') < onfire:
                 mydata.at[ligne[0], 'score'] = 1
             onfire = trees.count('true')

@@ -4,16 +4,3 @@ record_2018_02_26__12_19.csv -> out/up_3.csv
 record_2018_03_01__15_38.csv -> out/up_5.csv
 record_2018_02_27__23_09.csv -> out/up_6.csv
 record_2018_03_01__10_12.csv -> out/up_8.csv
-record_2018_03_06__21_41.csv -> out/up_9.csv
-record_2018_02_25__06_33.csv -> out/up_10.csv
-record_2018_02_25__13_06.csv -> out/up_11.csv
-record_2018_03_03__22_12.csv -> out/up_12.csv
-record_2018_02_25__14_37.csv -> out/up_13.csv
-record_2018_03_05__19_01.csv -> out/up_14.csv
-record_2018_02_27__08_34.csv -> out/up_15.csv
-record_2018_02_28__18_46.csv -> out/up_16.csv
-record_2018_02_28__08_42.csv -> out/up_17.csv
-record_2018_02_25__21_39.csv -> out/up_18.csv
-record_2018_03_01__20_15.csv -> out/up_19.csv
-record_2018_03_06__21_32.csv -> out/up_20.csv
-record_2018_03_01__20_14.csv -> out/up_21.csv
