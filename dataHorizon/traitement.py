@@ -137,7 +137,7 @@ for nom in os.listdir('.'):
                     mydata.at[ligne[0], 'leak' + str(i)] = 1
 
             # usedkeys
-            if info[12] != ' -1':
+            if info[12] != ' -1' and info[12] != '-1' :
                 keys = info[12]
                 if keys[0] == ' ':
                     keys = keys[1:]
@@ -148,25 +148,28 @@ for nom in os.listdir('.'):
             clicks = info[13]
             if clicks[0] == ' ':
                 clicks = clicks[1:]
-            clicks = clicks.split('-')
-            for i in ['wrench', 'minus', 'plus', 'push', 'removeAlarm']:
-                mydata.at[ligne[0], i] = clicks.count(i)
-            for i in range(0, 9):
-                mydata.at[ligne[0], 'clickLeak'] += clicks.count('clickLeak' + str(i))
+            if info[13] != '-1' :
+                clicks = clicks.split('-')
+                for i in ['wrench', 'minus', 'plus', 'push', 'removeAlarm']:
+                    mydata.at[ligne[0], i] = clicks.count(i)
+                for i in range(0, 9):
+                    mydata.at[ligne[0], 'clickLeak'] += clicks.count('clickLeak' + str(i))
 
             other = info[14]
             if other[0] == ' ':
                 other = other[1:]
-            other = other.split('-')
-            for i in ['otherkeyUp', 'otherkeyDown', 'otherClick']:
-                mydata.at[ligne[0], i] = other.count(i)
+            if info[14] != '-1' :
+                other = other.split('-')
+                for i in ['otherkeyUp', 'otherkeyDown', 'otherClick']:
+                    mydata.at[ligne[0], i] = other.count(i)
 
             keyboard = info[15]
             if keyboard[0] == ' ':
                 keyboard = keyboard[1:]
-            keyboard = keyboard.split('-')
-            for i in ['keyboard']:
-                mydata.at[ligne[0], i] = keyboard.count(i)
+            if info[15] != '-1' :
+                keyboard = keyboard.split('-')
+                for i in ['keyboard']:
+                    mydata.at[ligne[0], i] = keyboard.count(i)
 
         mydata = mydata.drop(
             ['trees_state', 'clicks', 'leaks_number', 'alarm', 'used_keys', 'others', 'keyboard_shortcuts'], axis=1)
@@ -178,5 +181,3 @@ for nom in os.listdir('.'):
         log.write(nom + ' -> ' + name + '\n')
 
 log.close()
-
-
