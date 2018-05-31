@@ -11,7 +11,7 @@ EPI_FILE = pd.read_csv("dataHorizon/out/up_0.csv")
 N_ACTIONS = 10
 N_STATES = EPI_FILE.columns.size - N_ACTIONS - 1
 print("N_ACTIONS:", N_ACTIONS)
-BATCH_SIZE = 32
+BATCH_SIZE = 3
 LR = 0.01                   # learning rate
 EPSILON = 0.9               # greedy policy
 GAMMA = 0.9                 # reward discount
@@ -77,9 +77,18 @@ class DQN(object):
         b_s_ = Variable(torch.FloatTensor(b_memory[:, -N_STATES:]))
         # q_eval w.r.t the action in experience
         q_eval = self.eval_net(b_s).gather(1, b_a )# shape (batch, 1)//value of the chosen action
-        q_next = self.target_net(b_s_).detach()     # detach from graph, don't backpropagate/value of all the actions
-        q_target = b_r + GAMMA * q_next.max(1)[0].view(BATCH_SIZE, 1)   # shape (batch, 1)
-        print("q_eval=",q_eval)
+        print("q_eval",q_eval)
+        q_eval4action = self.eval_net(b_s_).detach()     # detach from graph, don't backpropagate/value of all the actions
+        print("q_eval4action=",q_eval4action)
+        # the action that brings the highest value is evaluated by q_eval
+        (actions_max,actions_max_index)=torch.max(q_eval4action,1)
+        print("action_max_index=", actions_max_index)
+        actions_max_index=torch.unsqueeze(actions_max_index, 1)
+        print("action_max_index=",actions_max_index)
+        q_next=self.target_net(b_s_).gather(1,actions_max_index)
+        print("q_next=", q_next)
+        print("b_r=", b_r)
+        q_target = b_r + GAMMA * q_next   # shape (batch, 1)
         print("q_target=",q_target)
         loss = self.loss_func(q_eval, q_target)
 
@@ -125,5 +134,5 @@ for i_episode in range(N_EPISODE):
 
         s = s_next
 
-torch.save(dqn.eval_net, 'DQN_eval_net.pkl')
-torch.save(dqn.target_net, 'DQN_target_net.pkl')
+torch.save(dqn.eval_net, 'DoubleDQN_eval_net.pkl')
+torch.save(dqn.target_net, 'DoubbleDQN_target_net.pkl')
