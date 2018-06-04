@@ -11,7 +11,7 @@ EPI_FILE = pd.read_csv("dataHorizon/out/up_0.csv")
 N_ACTIONS = 10
 N_STATES = EPI_FILE.columns.size - N_ACTIONS - 1
 print("N_ACTIONS:", N_ACTIONS)
-BATCH_SIZE = 32
+BATCH_SIZE = 3
 LR = 0.01                   # learning rate
 EPSILON = 0.9               # greedy policy
 GAMMA = 0.9                 # reward discount
@@ -79,6 +79,7 @@ class DQN(object):
         q_eval = self.eval_net(b_s).gather(1, b_a )# shape (batch, 1)//value of the chosen action
         q_next = self.target_net(b_s_).detach()     # detach from graph, don't backpropagate/value of all the actions
         q_target = b_r + GAMMA * q_next.max(1)[0].view(BATCH_SIZE, 1)   # shape (batch, 1)
+        print("b_a=",b_a)
         print("q_eval=",q_eval)
         print("q_target=",q_target)
         loss = self.loss_func(q_eval, q_target)

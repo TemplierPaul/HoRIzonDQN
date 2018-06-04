@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="004a9823-bfef-4d7e-b9d9-17b50b94a9b3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/DoubleDQN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DQN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataHorizon/.~lock.record_2018_02_26__12_19.csv#" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataHorizon/.~lock.record_2018_03_06__21_32.csv#" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataHorizon/out/.~lock.up_21.csv#" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataHorizon/out/.~lock.up_3.csv#" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eval_net.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target_net.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleDQN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleDQN.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,9 +15,9 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/HRIDQN$pandaTest.coverage" NAME="pandaTest Coverage Results" MODIFIED="1527344924382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/HRIDQN$DoubleDQN.coverage" NAME="DoubleDQN Coverage Results" MODIFIED="1527779349494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HRIDQN$DoubleDQN.coverage" NAME="DoubleDQN Coverage Results" MODIFIED="1528119369088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HRIDQN$osTest.coverage" NAME="osTest Coverage Results" MODIFIED="1527666834863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataHorizon" />
-    <SUITE FILE_PATH="coverage/HRIDQN$dqn.coverage" NAME="dqn Coverage Results" MODIFIED="1527778824044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HRIDQN$dqn.coverage" NAME="dqn Coverage Results" MODIFIED="1528117716170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HRIDQN$traitement.coverage" NAME="traitement Coverage Results" MODIFIED="1527703714759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataHorizon" />
   </component>
   <component name="FileEditorManager">
@@ -31,8 +25,8 @@
       <file leaf-file-name="DQN.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DQN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="80" column="39" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
+            <state relative-caret-position="292">
+              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -43,8 +37,8 @@
       <file leaf-file-name="DoubleDQN.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DoubleDQN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="142">
+              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -55,17 +49,8 @@
       <file leaf-file-name="module.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/torch/nn/modules/module.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7245">
+            <state relative-caret-position="340">
               <caret line="490" selection-start-line="490" selection-end-line="490" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loss.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/torch/nn/modules/loss.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="370" selection-start-line="370" selection-end-line="370" />
             </state>
           </provider>
         </entry>
@@ -101,7 +86,7 @@
         <entry file="file://$PROJECT_DIR$/dataHorizon/traitement.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1875">
-              <caret line="127" column="60" lean-forward="true" selection-start-line="127" selection-start-column="60" selection-end-line="127" selection-end-column="60" />
+              <caret line="127" column="60" selection-start-line="127" selection-start-column="60" selection-end-line="127" selection-end-column="60" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -157,8 +142,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="532" />
-    <option name="y" value="139" />
+    <option name="x" value="61" />
+    <option name="y" value="23" />
     <option name="width" value="1354" />
     <option name="height" value="797" />
   </component>
@@ -175,6 +160,17 @@
             <path>
               <item name="HRIDQN" type="b2602c69:ProjectViewProjectNode" />
               <item name="HRIDQN" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HRIDQN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HRIDQN" type="462c0819:PsiDirectoryNode" />
+              <item name="dataHorizon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HRIDQN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HRIDQN" type="462c0819:PsiDirectoryNode" />
+              <item name="dataHorizon" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HRIDQN" type="b2602c69:ProjectViewProjectNode" />
@@ -338,7 +334,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="532" y="139" width="1354" height="797" extended-state="0" />
+    <frame x="61" y="23" width="1354" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -348,7 +344,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29268292" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3109756" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -707,11 +703,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eval_net.pkl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1560" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/eval_net.pkl" />
     <entry file="file://$PROJECT_DIR$/dataHorizon/record_2018_02_25__06_33.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -726,13 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/torch/nn/modules/module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7245">
-          <caret line="490" selection-start-line="490" selection-end-line="490" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/torch/nn/functional.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23325">
@@ -743,7 +728,7 @@
     <entry file="file://$PROJECT_DIR$/dataHorizon/traitement.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1875">
-          <caret line="127" column="60" lean-forward="true" selection-start-line="127" selection-start-column="60" selection-end-line="127" selection-end-column="60" />
+          <caret line="127" column="60" selection-start-line="127" selection-start-column="60" selection-end-line="127" selection-end-column="60" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -752,15 +737,22 @@
     </entry>
     <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/torch/nn/modules/loss.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="370" selection-start-line="370" selection-end-line="370" />
+        <state relative-caret-position="78">
+          <caret line="25" column="46" lean-forward="true" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/torch/nn/modules/module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="490" selection-start-line="490" selection-end-line="490" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DQN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="80" column="39" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
+        <state relative-caret-position="292">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
@@ -769,8 +761,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DoubleDQN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+        <state relative-caret-position="142">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
