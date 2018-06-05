@@ -1,4 +1,0 @@
-remainingtime, autonomousrobot, alarm, robotx, roboty, robotangle, treesstate, batterylevel, temperature, waterlevel, groundtankwaterlevel, leaksnumber, usedkeys, clicks 
-600, 0, -1, -0.0000030974420042184647, -0.000005227828751230845, 0.00016911503917071968, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, 100, 50, 50, 50, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, -1, -1
-599, 0, -1, -0.0000029372495191637427, -0.0000052778377721551806, 0.00016988390416372567, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, 100, 50, 50, 50, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, -1, -1
-598, 0, -1, -0.000002775292614387581, -0.000005327065082383342, 0.00017065306019503623, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, 99, 50, 50, 50, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, -1, -1

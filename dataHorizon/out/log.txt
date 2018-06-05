@@ -1,6 +1,0 @@
-record_2018_02_26__15_29.csv -> out/up_0.csv
-record_2018_03_03__23_05.csv -> out/up_2.csv
-record_2018_02_26__12_19.csv -> out/up_3.csv
-record_2018_03_01__15_38.csv -> out/up_5.csv
-record_2018_02_27__23_09.csv -> out/up_6.csv
-record_2018_03_01__10_12.csv -> out/up_8.csv

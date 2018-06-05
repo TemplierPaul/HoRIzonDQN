@@ -1,6 +1,0 @@
-remainingtime, autonomousrobot, alarm, robotx, roboty, robotangle, treesstate, batterylevel, temperature, waterlevel, groundtankwaterlevel, leaksnumber, usedkeys, clicks 
-600, 0, -1, -0.000003723660029208986, -0.000004966655978932977, 0.0001651137281442061, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, 100, 50, 50, 50, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, -1, -1
-599, 0, -1, -0.000003115613708359888, -0.000005196648089622613, 0.0001686534524196759, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, 100, 50, 50, 50, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, -1, -1
-598, 0, -1, -0.000003067389116040431, -0.0000052473938012553845, 0.00016942188085522503, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, 99, 50, 50, 50, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, left-left, -1
-597, 0, -1, -0.000005338335540727712, 0.000021560588720603846, 0.2518099546432495, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, 99, 50, 50, 50, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, left-left-front-front-front-right, -1
-596, 0, -1, 1.2775958776474, 0.6504614949226379, 0.4308362603187561, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, 98, 50, 50, 50, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, right, -1
