@@ -104,6 +104,4 @@ venv.bak/
 .mypy_cache/
 
 #my setting
-dataHorizon/
-dataHorizon/out/
-dataHorizon/*.py
+*.csv

@@ -89,7 +89,7 @@ class DQN(object):
         print("q_next=", q_next)
         #print("b_r=", b_r)
         q_target = b_r + GAMMA * q_next  # shape (batch, 1)
-        print("q_target=",q_target)
+        #print("q_target=",q_target)
         loss = self.loss_func(q_eval, q_target)
         print("loss=",loss)
 
@@ -131,7 +131,7 @@ for i_episode in range(N_EPISODE):
             dqn.learn()
             print('Ep: ', i_episode,
                 '| Ep_r: ', round(ep_r, 2))
-            print("weight=",dqn.target_net.fc1.weight)
+            #print("weight=",dqn.target_net.fc1.weight)
 
         s = s_next
 

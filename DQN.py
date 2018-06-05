@@ -79,9 +79,9 @@ class DQN(object):
         q_eval = self.eval_net(b_s).gather(1, b_a )# shape (batch, 1)//value of the chosen action
         q_next = self.target_net(b_s_).detach()     # detach from graph, don't backpropagate/value of all the actions
         q_target = b_r + GAMMA * q_next.max(1)[0].view(BATCH_SIZE, 1)   # shape (batch, 1)
-        print("b_a=",b_a)
-        print("q_eval=",q_eval)
-        print("q_target=",q_target)
+        #print("b_a=",b_a)
+        #print("q_eval=",q_eval)
+        #print("q_target=",q_target)
         loss = self.loss_func(q_eval, q_target)
 
         self.optimizer.zero_grad()
@@ -122,7 +122,7 @@ for i_episode in range(N_EPISODE):
             dqn.learn()
             print('Ep: ', i_episode,
                 '| Ep_r: ', round(ep_r, 2))
-            print("weight=",dqn.target_net.fc1.weight)
+            #print("weight=",dqn.target_net.fc1.weight)
 
         s = s_next
 
