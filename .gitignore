@@ -105,4 +105,4 @@ venv.bak/
 
 #my setting
 dataHorizon/
-!dataHorizon/traitement.py
+!dataHorizon/*.py
