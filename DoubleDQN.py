@@ -85,7 +85,7 @@ class DQN(object):
         #print("action_max_index=", actions_max_index)
         actions_max_index=torch.unsqueeze(actions_max_index, 1)
         #print("action_max_index=",actions_max_index)
-        q_next=self.target_net(b_s_).gather(1,actions_max_index).detach()
+        q_next=self.target_net(b_s_).gather(1,actions_max_index).detach()  # detach from graph, don't backpropagate
         print("q_next=", q_next)
         #print("b_r=", b_r)
         q_target = b_r + GAMMA * q_next  # shape (batch, 1)

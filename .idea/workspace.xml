@@ -2,9 +2,1113 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="004a9823-bfef-4d7e-b9d9-17b50b94a9b3" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_05__15_38.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_05__16_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_05__16_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_05__18_13.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_05__18_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_05__18_39.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_05__19_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_05__22_42.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_05__22_59.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_05__23_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_05__23_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_05__23_51.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__00_06.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__00_11.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__00_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__02_12.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__10_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__10_10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__10_15.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__10_17.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__10_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__10_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__10_30.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__10_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__10_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__10_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__10_39.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__10_40.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__10_42.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__10_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__10_59.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__11_04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__11_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__11_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__11_23.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__11_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__12_08.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__12_25.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__13_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__13_54.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__15_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__16_26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__16_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__18_42.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__18_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__20_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__23_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_06__23_25.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_07__11_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_07__12_54.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_07__13_05.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_07__15_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_07__17_03.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_07__17_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_07__17_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_07__18_18.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__00_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__00_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__04_01.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__13_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__13_25.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__13_26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__13_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__13_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__13_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__13_43.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__13_45.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__13_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__14_14.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__14_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__14_18.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__14_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__14_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__14_25.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__14_26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__14_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__14_30.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__14_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__14_38.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__15_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__15_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__16_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__16_23.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__16_58.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__16_59.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__17_01.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__17_02.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_08__17_26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_09__05_14.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_09__05_23.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_09__05_42.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_09__11_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_09__11_39.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_10__09_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_10__15_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_11__03_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_11__12_38.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_11__14_47.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_11__15_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_11__16_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_11__16_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_11__17_30.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_11__18_08.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_11__18_42.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_12__18_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_12__23_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_13__10_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_13__17_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_14__16_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_14__18_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_14__18_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_14__18_45.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_14__19_00.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_14__19_03.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_14__19_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_14__19_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_14__19_30.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_14__19_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_14__20_01.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_14__20_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_14__21_03.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_14__21_14.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_15__09_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_15__12_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_15__12_18.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_15__14_36.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_18__01_40.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_18__01_51.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_18__01_58.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_18__02_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_18__02_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_18__12_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_18__12_23.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_18__12_25.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__10_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__10_40.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__10_45.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__11_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__12_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__12_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__12_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__13_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__13_18.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__13_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__13_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__13_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__13_43.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__17_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__17_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__18_00.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__18_02.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__18_03.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__18_12.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__22_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__22_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__22_26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_20__22_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_21__09_10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_21__10_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_21__14_41.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_21__16_23.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_21__16_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_21__16_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_21__16_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_21__16_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_22__14_01.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_22__15_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_24__16_57.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_26__03_18.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_29__20_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_29__20_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_09_30__14_04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_02__17_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_02__18_40.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_02__18_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_03__06_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_03__10_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_03__13_18.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_03__14_17.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_03__16_54.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_03__22_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_03__22_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_04__15_39.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_04__16_26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_04__17_03.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_04__17_13.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_04__17_15.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_04__23_58.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_05__13_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_05__16_13.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_05__16_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_05__16_40.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_05__17_47.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_05__18_04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_06__13_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_06__14_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_06__15_30.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_06__16_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_06__18_12.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_07__20_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_08__17_57.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_09__14_38.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_10__14_45.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_10__16_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_10__16_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__07_25.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__09_11.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__09_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__09_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__09_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__09_51.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__09_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__09_54.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__10_01.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__10_02.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__10_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__10_11.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__10_13.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__10_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__10_48.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__10_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__10_51.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__10_59.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__11_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__14_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__14_39.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__14_40.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__14_51.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__14_58.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__15_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__15_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__15_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__15_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__15_59.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__16_01.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__16_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__16_11.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__16_15.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__16_30.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__17_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__18_01.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__18_06.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__18_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__18_26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__18_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__18_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__18_40.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__18_45.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__18_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__18_55.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__19_01.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__19_43.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__19_57.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__20_18.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__20_40.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__20_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__21_10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__21_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__21_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__21_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__21_36.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__21_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__22_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__22_23.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__22_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_11__22_54.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__09_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__09_13.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__09_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__09_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__10_54.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__11_02.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__11_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__11_25.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__12_00.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__12_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__12_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__12_51.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__13_03.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__13_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__13_10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__13_13.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__13_14.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__13_26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__13_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__13_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__13_38.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__13_55.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__14_40.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__15_05.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__15_06.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__15_08.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__15_10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__15_41.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__15_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__15_57.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__16_06.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__16_14.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__16_15.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__16_40.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__16_43.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__16_45.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__17_26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__17_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__17_36.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__17_38.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__17_43.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__17_45.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__17_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__17_51.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__17_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__17_57.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__18_03.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__18_18.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__18_42.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__18_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_12__20_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__08_47.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__10_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__10_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__10_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__11_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__11_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__11_45.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__11_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__11_57.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__12_03.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__12_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__13_54.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__14_05.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__14_30.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__14_36.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__15_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__15_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__15_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__15_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__16_17.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__16_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__17_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__17_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__18_04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__18_14.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__18_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__19_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__19_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__19_43.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__19_48.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__19_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__21_04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__21_06.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__21_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_13__22_26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__00_58.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__03_47.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__10_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__10_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__10_39.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__10_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__10_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__10_57.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__11_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__11_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__11_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__12_01.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__12_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__12_10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__12_17.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__12_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__13_40.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__13_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__13_47.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__14_02.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__14_17.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__14_51.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__15_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__15_10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__15_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__16_48.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__17_17.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__17_38.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__17_55.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_14__19_36.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_15__11_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_15__16_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_15__18_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_16__06_43.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_16__08_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_16__10_55.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_16__11_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_16__11_42.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_16__11_45.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_16__11_58.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_16__12_26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_16__13_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_16__14_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_16__14_14.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_16__16_10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_16__21_36.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_17__10_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_17__10_23.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_17__13_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_17__16_10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_17__16_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_17__16_47.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_17__17_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_17__19_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_17__20_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_17__21_26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_19__13_36.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_19__15_40.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_20__09_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_20__15_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_20__15_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_20__16_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_20__16_17.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_20__16_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_20__17_38.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_20__18_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_20__18_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_20__19_11.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_20__19_14.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_20__19_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_20__19_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_20__20_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_20__21_00.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_20__21_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_20__21_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_21__05_03.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_21__05_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_21__08_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_21__12_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_21__13_48.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_21__14_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_21__15_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_21__15_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_21__16_26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_21__18_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_21__19_10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_22__12_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_22__16_39.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_23__18_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_24__10_01.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_24__10_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_24__14_47.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_24__15_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_24__15_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_24__16_23.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_24__16_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_24__17_10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_24__17_12.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_24__17_25.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_24__17_41.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_24__17_59.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_24__18_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_24__18_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_24__18_17.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_24__18_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_24__21_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_24__21_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_24__21_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_24__21_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_25__10_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_28__22_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_29__08_47.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_29__14_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_30__11_15.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_30__14_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_30__18_55.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_10_30__19_04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_03__08_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_04__18_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_04__19_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__02_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__02_57.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__03_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__03_54.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__03_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__10_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__11_04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__11_06.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__11_15.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__11_55.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__11_59.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__12_54.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__12_55.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__13_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__14_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__14_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__14_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__15_08.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__15_12.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__15_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_08__16_04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_10__14_59.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_12__15_42.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_13__09_59.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_16__05_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_17__09_04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_17__09_10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_17__09_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_17__09_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_21__16_03.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_23__11_17.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_28__15_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_11_28__16_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_01__10_45.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_01__17_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_04__11_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_04__11_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_04__11_36.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_04__11_57.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_04__15_48.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_04__17_43.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_04__17_54.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_04__18_02.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_04__18_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_05__14_18.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_06__15_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_06__15_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_07__10_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_11__10_23.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_14__13_02.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_14__13_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_14__13_41.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_14__16_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_14__16_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_14__16_42.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_14__17_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_14__17_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_14__17_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_14__17_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_14__18_00.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_14__18_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_14__18_45.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_15__14_14.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_15__14_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_15__17_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_16__19_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_20__08_51.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_21__14_03.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_12_21__14_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_8_4__14_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_8_4__16_30.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_8_4__19_25.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_8_4__20_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_8_5__0_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_8_5__0_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_8_5__0_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_8_5__0_38.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__0_48.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__10_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__10_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__10_9.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__11_40.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__11_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__12_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__12_47.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__13_0.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__13_4.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__13_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__13_45.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__14_23.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__14_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__14_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__14_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__14_48.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__15_12.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__15_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__15_8.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__1_1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__1_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__1_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__1_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__1_59.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__1_8.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__2_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__2_4.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__2_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__2_51.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2017_9_5__2_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_04__11_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_07__09_08.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_07__15_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_07__16_23.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_07__18_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_07__18_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_07__18_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_07__18_42.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_07__18_51.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_07__19_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_08__01_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_08__01_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_09__16_04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_09__16_47.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_09__17_12.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_09__17_13.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_09__17_14.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_11__09_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_11__14_11.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_11__14_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_11__15_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_11__15_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_11__16_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_11__16_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_12__00_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_12__01_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_12__01_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_12__01_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_12__02_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_12__02_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_12__03_02.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_12__03_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_12__03_36.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_12__03_59.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_12__04_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_12__04_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_12__07_02.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_12__11_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_15__10_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_16__10_12.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_16__10_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_16__10_23.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_16__12_59.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_16__13_10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_16__16_10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_16__16_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_16__18_17.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_16__19_04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_17__01_59.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_17__13_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_17__16_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_17__16_43.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_17__17_00.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_17__17_17.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_17__17_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_18__12_01.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_18__12_13.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_18__12_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_18__12_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_18__16_14.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_18__16_30.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_18__16_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_18__16_42.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_18__16_59.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_18__17_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_18__18_02.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_18__18_05.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_18__18_13.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_18__18_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_18__18_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_18__18_36.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_18__19_06.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_18__19_10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_19__14_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_19__15_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_19__16_04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_19__16_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_19__16_36.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_19__21_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_20__18_55.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_20__21_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_21__14_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_22__09_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_22__09_38.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_22__10_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_22__13_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_22__13_48.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_22__13_55.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_22__14_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_22__14_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_22__14_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_22__15_04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_22__15_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_22__17_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_22__17_25.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_22__17_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_22__23_15.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_23__00_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_23__01_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_23__01_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_23__01_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_23__02_04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_23__03_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_23__04_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_23__14_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_23__15_39.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_23__15_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_23__15_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_23__16_00.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_25__18_36.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__16_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__16_38.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__16_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__17_08.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__17_17.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__17_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__17_40.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__17_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__17_47.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__18_06.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__18_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__18_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__18_42.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__18_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__19_11.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__19_17.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__19_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__19_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__22_39.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__23_00.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_26__23_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_27__01_51.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_27__01_59.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_27__03_38.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_28__15_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_29__11_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_29__11_41.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_29__13_47.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_29__15_51.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_29__16_06.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_29__16_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_29__16_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_29__18_15.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_29__18_41.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_29__18_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_29__19_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_29__19_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_29__21_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_29__22_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_29__22_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_29__22_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_29__22_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_30__06_11.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_30__07_51.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_30__11_06.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_30__11_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_30__11_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_30__11_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_30__11_47.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_30__22_43.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_30__23_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_30__23_18.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_30__23_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_30__23_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_30__23_23.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_30__23_39.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_30__23_43.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_30__23_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__00_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__00_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__00_30.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__00_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__00_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__00_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__01_15.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__12_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__13_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__13_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__15_58.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__16_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__16_38.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__16_43.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__17_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__17_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__17_45.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__17_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__17_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__18_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__18_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__18_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__18_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__18_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__19_06.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__20_05.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__20_38.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__20_45.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__21_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__21_25.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__21_47.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__22_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_01_31__23_51.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__07_51.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__08_14.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__08_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__09_08.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__09_18.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__09_25.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__09_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__09_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__10_01.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__10_08.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__10_25.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__11_14.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__11_51.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__13_05.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__13_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__14_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__15_02.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__15_06.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__16_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__17_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__17_38.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__18_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__19_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__20_04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__22_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_01__22_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_02__08_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_02__11_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_02__11_36.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_02__13_11.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_02__15_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_02__16_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_02__16_58.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_02__17_23.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_02__17_26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_02__17_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_02__18_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_02__18_40.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_02__18_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_02__18_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_02__19_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_02__19_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_02__21_12.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_02__23_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_03__00_12.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_03__05_18.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_03__10_55.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_03__12_15.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_03__12_41.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_03__13_17.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_03__13_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_03__17_48.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_03__19_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_04__17_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_04__18_25.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_04__18_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_04__18_45.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_04__18_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_04__19_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_04__22_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_05__08_45.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_05__09_42.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_05__11_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_05__12_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_05__14_47.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_05__14_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_05__16_58.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_05__17_04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_05__17_10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_05__17_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_05__18_26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_05__18_42.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_06__09_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_06__10_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_06__10_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_06__11_00.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_06__11_03.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_06__11_05.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_06__12_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_06__14_26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_06__14_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_06__15_01.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_06__15_15.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_07__09_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_07__09_47.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_07__17_02.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_07__17_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_08__09_02.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_08__09_12.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_08__10_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_08__10_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_08__11_03.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_08__11_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_08__11_36.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_08__14_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_08__14_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_08__14_48.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_08__14_58.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_08__15_12.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_08__16_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_08__17_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_08__19_26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_08__19_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_09__11_39.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_09__11_40.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_09__15_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_09__15_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_09__15_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_09__15_57.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_09__16_04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_09__16_12.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_09__16_26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_10__15_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_10__17_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_10__17_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_10__19_25.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_10__23_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_12__10_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_12__11_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_12__13_39.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_12__22_18.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_12__22_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_12__22_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_13__10_59.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_13__15_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_13__16_10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_13__16_14.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_13__21_13.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_14__16_48.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_15__12_39.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_15__14_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_15__15_55.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_15__15_59.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_15__16_13.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_15__16_26.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_15__16_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_15__17_15.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_15__18_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_15__19_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_15__19_13.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_16__09_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_16__10_17.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_16__10_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_16__10_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_16__10_36.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_16__10_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_16__10_57.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_16__11_00.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_16__11_06.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_16__13_25.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_16__13_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_16__13_40.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_16__15_41.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_16__15_43.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_16__15_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_16__16_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_16__16_45.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_16__16_55.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_18__01_04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_18__12_54.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_18__19_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_19__10_06.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_19__13_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_19__14_17.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_19__14_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_19__14_48.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_19__15_03.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_19__15_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_19__18_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_19__18_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_19__18_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_19__19_00.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_19__19_10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_20__01_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_20__09_54.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_20__14_38.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_20__14_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_20__15_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_20__15_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_20__15_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_21__16_12.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_21__16_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_21__16_58.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_21__17_14.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_21__17_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_21__17_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_21__17_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_21__18_41.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__10_08.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__10_17.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__10_54.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__11_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__11_15.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__14_13.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__15_05.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__15_30.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__15_40.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__16_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__17_00.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__17_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__17_13.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__17_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__17_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__17_57.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__18_06.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__18_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__18_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__18_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__18_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__18_47.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__18_48.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__19_18.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__19_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_22__19_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_23__00_03.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_23__06_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_23__11_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_23__14_11.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_23__14_36.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_23__19_32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_23__19_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_23__20_00.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_23__20_15.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_23__20_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_23__20_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_23__20_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_23__20_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_24__10_15.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_02_25__10_58.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_09__21_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_10__11_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_10__11_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_11__18_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_11__21_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_12__13_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_13__15_30.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_14__12_42.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_14__18_38.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_14__19_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_14__19_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_14__20_57.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_14__21_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_17__18_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_21__17_13.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_23__17_58.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_25__16_07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_25__16_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_25__16_47.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_25__16_52.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_25__20_13.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_03_29__13_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_02__13_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_04__10_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_04__20_06.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_09__12_56.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_09__13_11.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_09__13_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_09__13_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_09__13_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_09__14_01.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_09__15_47.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_09__15_58.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_09__19_18.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_09__19_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_09__19_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_09__19_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_09__19_51.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_09__20_33.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_09__22_34.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_10__13_18.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_11__14_02.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_11__21_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_11__21_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_12__09_02.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_12__09_06.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_12__09_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_12__09_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_12__09_58.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_12__10_12.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_12__11_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_12__11_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_12__12_43.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_12__12_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_13__01_23.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_13__01_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_13__22_45.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_14__19_43.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_15__00_58.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_16__10_16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_17__12_10.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_23__17_37.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_23__18_48.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_24__07_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_24__07_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_24__07_47.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_24__07_50.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_24__07_53.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_24__07_57.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_24__09_24.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_24__13_09.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_24__14_03.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_24__15_25.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_25__08_11.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_25__08_38.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_25__08_44.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_25__10_35.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_25__11_11.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_25__13_43.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_27__08_17.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_04_27__08_49.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_05_04__12_23.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_05_05__00_29.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_05_10__00_46.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_05_11__23_27.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_05_15__11_01.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_05_17__02_18.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_05_17__14_14.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_05_17__15_08.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_05_17__17_31.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_05_22__10_03.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_05_22__10_19.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/record_2018_05_22__10_28.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DQN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DoubleDQN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleDQN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataHorizon/out/.~lock.up_8.csv#" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,20 +1129,26 @@
       <file leaf-file-name="DQN.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DQN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoubleDQN.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="python.gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="492">
+              <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DoubleDQN.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DoubleDQN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+            <state relative-caret-position="1470">
+              <caret line="98" selection-start-line="98" selection-end-line="98" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -49,7 +1159,7 @@
       <file leaf-file-name="module.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/torch/nn/modules/module.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="7245">
               <caret line="490" selection-start-line="490" selection-end-line="490" />
             </state>
           </provider>
@@ -85,8 +1195,8 @@
       <file leaf-file-name="traitement.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataHorizon/traitement.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1875">
-              <caret line="127" column="60" selection-start-line="127" selection-start-column="60" selection-end-line="127" selection-end-column="60" />
+            <state relative-caret-position="21">
+              <caret line="147" column="32" lean-forward="true" selection-start-line="147" selection-start-column="32" selection-end-line="147" selection-end-column="32" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -132,6 +1242,7 @@
         <option value="$PROJECT_DIR$/dataHorizon/traitement.py" />
         <option value="$PROJECT_DIR$/DQN.py" />
         <option value="$PROJECT_DIR$/DoubleDQN.py" />
+        <option value="$PROJECT_DIR$/python.gitignore" />
       </list>
     </option>
   </component>
@@ -142,8 +1253,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="61" />
-    <option name="y" value="23" />
+    <option name="x" value="86" />
+    <option name="y" value="103" />
     <option name="width" value="1354" />
     <option name="height" value="797" />
   </component>
@@ -153,7 +1264,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,6 +1291,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -334,17 +1445,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="61" y="23" width="1354" height="797" extended-state="0" />
+    <frame x="86" y="103" width="1354" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3109756" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31554878" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -366,14 +1477,12 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dataHorizon/record_2018_02_25__06_33.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataHorizon/traitement.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1875">
@@ -395,9 +1504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -436,9 +1542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -470,9 +1573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1935">
           <caret line="129" column="34" lean-forward="true" selection-start-line="129" selection-start-column="34" selection-end-line="129" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -504,9 +1604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
           <caret line="74" column="47" lean-forward="true" selection-start-line="74" selection-start-column="47" selection-end-line="74" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -531,9 +1628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="90" column="50" lean-forward="true" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -551,9 +1645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1740">
           <caret line="116" column="17" lean-forward="true" selection-start-line="116" selection-start-column="17" selection-end-line="116" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -582,9 +1673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -613,9 +1701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -644,9 +1729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
           <caret line="68" column="77" lean-forward="true" selection-start-line="68" selection-start-column="77" selection-end-line="68" selection-end-column="77" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -675,9 +1757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -725,16 +1804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataHorizon/traitement.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1875">
-          <caret line="127" column="60" selection-start-line="127" selection-start-column="60" selection-end-line="127" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/torch/nn/modules/loss.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -744,28 +1813,42 @@
     </entry>
     <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/torch/nn/modules/module.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="7245">
           <caret line="490" selection-start-line="490" selection-end-line="490" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DQN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DoubleDQN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        <state relative-caret-position="1470">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DQN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataHorizon/traitement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="147" column="32" lean-forward="true" selection-start-line="147" selection-start-column="32" selection-end-line="147" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
         </state>
       </provider>
     </entry>

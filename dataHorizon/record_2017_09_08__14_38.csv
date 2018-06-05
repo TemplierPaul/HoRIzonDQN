@@ -1,0 +1,10 @@
+remainingtime, autonomousrobot, alarm, robotx, roboty, robotangle, treesstate, batterylevel, temperature, waterlevel, groundtankwaterlevel, leaksnumber, usedkeys, clicks 
+600, 0, -1, 5.360053539276123, -4.845549583435059, -0.7469028234481812, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, 100, 10, 50, 50, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, -1, giveUp
+599, 0, -1, 5.360053539276123, -4.845549583435059, -0.7469028234481812, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, 100, 10, 50, 50, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, -1, -1
+598, 0, -1, 5.360053539276123, -4.845549583435059, -0.7469028234481812, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, 100, 10, 50, 50, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, -1, -1
+597, 0, -1, 5.360053539276123, -4.845549583435059, -0.7469028234481812, fals0.0tru0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, 99, 10, 50, 50, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, -1, -1
+596, 0, -1, 5.360053539276123, -4.845549583435059, -0.7469028234481812, fals0.0tru0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, 98, 10, 50, 50, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, -1, -1
+595, 0, -1, 5.360053539276123, -4.845549583435059, -0.7469028234481812, fals0.0tru0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, 98, 10, 50, 50, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, -1, -1
+594, 0, -1, 5.360053539276123, -4.845549583435059, -0.7469028234481812, fals0.0tru0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, 97, 10, 50, 50, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, front, -1
+593, 0, -1, 5.360053539276123, -4.845549583435059, -0.7469028234481812, fals0.0tru0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, 97, 10, 50, 50, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, -1, -1
+592, 0, -1, 5.360053539276123, -4.845549583435059, -0.7469028234481812, fals0.0tru0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, 96, 10, 50, 50, fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0fals0.0false, -1, -1
