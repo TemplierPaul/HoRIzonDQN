@@ -11,14 +11,14 @@ EPI_FILE = pd.read_csv("dataHorizon/out/up_0.csv")
 N_ACTIONS = 10
 N_STATES = EPI_FILE.columns.size - N_ACTIONS - 1
 print("N_ACTIONS:", N_ACTIONS)
-BATCH_SIZE = 3
+BATCH_SIZE = 32   # Number of samples selected per study
 LR = 0.01                   # learning rate
 EPSILON = 0.9               # greedy policy
 GAMMA = 0.9                 # reward discount
 TARGET_REPLACE_ITER = 10   # target update frequency
 MEMORY_CAPACITY = 1000
-N_EPISODE=100
-N_EXP_TOL=200
+N_EPISODE=2000   #Number of files read (number of experiments)
+N_EXP_TOL=400    #If the game is running too long, go to the next experiment(temporarily not considered)
 
 
 class Net(nn.Module):
@@ -48,8 +48,9 @@ class DQN(object):
 
     def choose_action(self, x):
         action=np.array(EPI_FILE.ix[x, N_STATES :N_STATES+N_ACTIONS])
-        action_index=0
+        action_index=8  # 8 means alarm 6, means None
         for i in range(N_ACTIONS):
+            #print("i=",i)
             if(action[i]>0):
                 action_index=i
                 break
@@ -73,6 +74,7 @@ class DQN(object):
         b_memory = self.memory[sample_index, :]
         b_s = Variable(torch.FloatTensor(b_memory[:, :N_STATES]))
         b_a = Variable(torch.LongTensor(b_memory[:, N_STATES:N_STATES+1].astype(int)))
+        #print("b_a=",b_a)
         b_r = Variable(torch.FloatTensor(b_memory[:, N_STATES+1:N_STATES+1+1]))
         b_s_ = Variable(torch.FloatTensor(b_memory[:, -N_STATES:]))
         # q_eval w.r.t the action in experience
@@ -98,20 +100,18 @@ for i_episode in range(N_EPISODE):
     except FileNotFoundError:
         continue
     N_EXP = EPI_FILE.iloc[:, 0].size
-    s_i = 1
+    s_i = 0
     s=np.array(EPI_FILE.ix[s_i, 0:N_STATES])
     ep_r = 0
     while (s_i<N_EXP-1):
 
-
-
         # take action
         a_index = dqn.choose_action(s_i)
-
+        #print("a_index=",a_index)
         r = np.array(EPI_FILE.ix[s_i, N_STATES+N_ACTIONS])
         s_i=s_i+1
-        if s_i>N_EXP_TOL:
-            break
+        # if s_i>N_EXP_TOL:
+        #     break
         s_next = np.array(EPI_FILE.ix[s_i, 0:N_STATES])
 
 

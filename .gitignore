@@ -105,3 +105,4 @@ venv.bak/
 
 #my setting
 *.csv
+*.pkl

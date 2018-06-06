@@ -5,9 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DQN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoubbleDQN_target_net.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/DoubbleDQN_target_net.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DQN_eval_net.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/DQN_eval_net.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DQN_target_net.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/DQN_target_net.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DoubleDQN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleDQN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoubleDQN_eval_net.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleDQN_eval_net.pkl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +20,7 @@
     <SUITE FILE_PATH="coverage/HRIDQN$pandaTest.coverage" NAME="pandaTest Coverage Results" MODIFIED="1527344924382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HRIDQN$DoubleDQN.coverage" NAME="DoubleDQN Coverage Results" MODIFIED="1528190738983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HRIDQN$osTest.coverage" NAME="osTest Coverage Results" MODIFIED="1527666834863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataHorizon" />
-    <SUITE FILE_PATH="coverage/HRIDQN$dqn.coverage" NAME="dqn Coverage Results" MODIFIED="1528190673095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HRIDQN$dqn.coverage" NAME="dqn Coverage Results" MODIFIED="1528294838829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HRIDQN$traitement.coverage" NAME="traitement Coverage Results" MODIFIED="1528190143829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataHorizon" />
   </component>
   <component name="FileEditorManager">
@@ -28,8 +28,8 @@
       <file leaf-file-name="DQN.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DQN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
+            <state relative-caret-position="174">
+              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -37,16 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoubleDQN_eval_net.pkl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DoubleDQN_eval_net.pkl">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="106" column="5" lean-forward="true" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+            <state relative-caret-position="372">
+              <caret line="107" column="5" lean-forward="true" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -54,7 +49,7 @@
       <file leaf-file-name="traitement.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataHorizon/traitement.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
+            <state relative-caret-position="780">
               <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
             </state>
           </provider>
@@ -63,8 +58,8 @@
       <file leaf-file-name="DoubleDQN.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DoubleDQN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="99" column="11" lean-forward="true" selection-start-line="99" selection-start-column="11" selection-end-line="99" selection-end-column="11" />
+            <state relative-caret-position="770">
+              <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -194,7 +189,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.DoubleDQN">
+  <component name="RunManager" selected="Python.dqn">
     <configuration name="DoubleDQN" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="HRIDQN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -299,8 +294,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.DoubleDQN" />
         <item itemvalue="Python.dqn" />
+        <item itemvalue="Python.DoubleDQN" />
         <item itemvalue="Python.traitement" />
         <item itemvalue="Python.osTest" />
         <item itemvalue="Python.pandaTest" />
@@ -331,7 +326,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3246951" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3292683" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -359,6 +354,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1515">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pandaTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -605,28 +607,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dataHorizon/traitement.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
+        <state relative-caret-position="780">
           <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DQN.py">
+    <entry file="file://$PROJECT_DIR$/DoubleDQN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
+        <state relative-caret-position="770">
+          <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DoubleDQN_eval_net.pkl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DoubleDQN.py">
+    <entry file="file://$PROJECT_DIR$/DQN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="99" column="11" lean-forward="true" selection-start-line="99" selection-start-column="11" selection-end-line="99" selection-end-column="11" />
+        <state relative-caret-position="174">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
@@ -635,8 +634,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="106" column="5" lean-forward="true" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+        <state relative-caret-position="372">
+          <caret line="107" column="5" lean-forward="true" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
         </state>
       </provider>
     </entry>

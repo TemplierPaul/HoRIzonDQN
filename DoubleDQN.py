@@ -11,14 +11,14 @@ EPI_FILE = pd.read_csv("dataHorizon/out/up_0.csv")
 N_ACTIONS = 10
 N_STATES = EPI_FILE.columns.size - N_ACTIONS - 1
 print("N_ACTIONS:", N_ACTIONS)
-BATCH_SIZE = 3
+BATCH_SIZE = 32   # Number of samples selected per study
 LR = 0.01                   # learning rate
 EPSILON = 0.9               # greedy policy
 GAMMA = 0.9                 # reward discount
 TARGET_REPLACE_ITER = 10   # target update frequency
-MEMORY_CAPACITY = 1000
-N_EPISODE=100
-N_EXP_TOL=200
+MEMORY_CAPACITY = 500
+N_EPISODE=2000   #Number of files read (number of experiments)
+N_EXP_TOL=400    #If the game is running too long, go to the next experiment(temporarily not considered)
 
 
 class Net(nn.Module):
@@ -48,7 +48,7 @@ class DQN(object):
 
     def choose_action(self, x):
         action=np.array(EPI_FILE.ix[x, N_STATES :N_STATES+N_ACTIONS])
-        action_index=0
+        action_index=8   # 8 means alarm 6, means Non
         for i in range(N_ACTIONS):
             if(action[i]>0):
                 action_index=i
@@ -77,7 +77,7 @@ class DQN(object):
         b_s_ = Variable(torch.FloatTensor(b_memory[:, -N_STATES:]))
         # q_eval w.r.t the action in experience
         q_eval = self.eval_net(b_s).gather(1, b_a )# shape (batch, 1)//value of the chosen action
-        print("q_eval",q_eval)
+        #print("q_eval",q_eval)
         q_eval4action = self.eval_net(b_s_).detach()     # detach from graph, don't backpropagate/value of all the actions
         #print("q_eval4action=",q_eval4action)
         # the action that brings the highest value is evaluated by q_eval
@@ -86,12 +86,12 @@ class DQN(object):
         actions_max_index=torch.unsqueeze(actions_max_index, 1)
         #print("action_max_index=",actions_max_index)
         q_next=self.target_net(b_s_).gather(1,actions_max_index).detach()  # detach from graph, don't backpropagate
-        print("q_next=", q_next)
+        #print("q_next=", q_next)
         #print("b_r=", b_r)
         q_target = b_r + GAMMA * q_next  # shape (batch, 1)
         #print("q_target=",q_target)
         loss = self.loss_func(q_eval, q_target)
-        print("loss=",loss)
+        #print("loss=",loss)
 
         self.optimizer.zero_grad()
         loss.backward()
@@ -107,7 +107,7 @@ for i_episode in range(N_EPISODE):
     except FileNotFoundError:
         continue
     N_EXP = EPI_FILE.iloc[:, 0].size
-    s_i = 1
+    s_i = 0
     s=np.array(EPI_FILE.ix[s_i, 0:N_STATES])
     ep_r = 0
     while (s_i<N_EXP-1):
@@ -119,8 +119,8 @@ for i_episode in range(N_EPISODE):
 
         r = np.array(EPI_FILE.ix[s_i, N_STATES+N_ACTIONS])
         s_i=s_i+1
-        if s_i>N_EXP_TOL:
-            break
+        # if s_i>N_EXP_TOL:
+        #     break
         s_next = np.array(EPI_FILE.ix[s_i, 0:N_STATES])
 
 
