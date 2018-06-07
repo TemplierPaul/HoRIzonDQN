@@ -21,7 +21,7 @@ N_EPISODE=2000   #Number of files read (number of experiments)
 N_EXP_TOL=400    #If the game is running too long, go to the next experiment(temporarily not considered)
 
 
-class Net(nn.Module):
+class Net(nn.Modul
     def __init__(self, ):
         super(Net, self).__init__()
         self.fc1 = nn.Linear(N_STATES, 50)
