@@ -91,7 +91,7 @@ class DQN(object):
         q_target = b_r + GAMMA * q_next  # shape (batch, 1)
         #print("q_target=",q_target)
         loss = self.loss_func(q_eval, q_target)
-        #print("loss=",loss)
+        print("loss=",loss)
 
         self.optimizer.zero_grad()
         loss.backward()

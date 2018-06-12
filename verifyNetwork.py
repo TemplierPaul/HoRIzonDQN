@@ -5,7 +5,6 @@ import torch.nn.functional as F
 import numpy as np
 import pandas as pd
 
-
 # Hyper Parameters
 EPI_FILE = pd.read_csv("dataHorizon/out/up_0.csv")
 N_ACTIONS = 10

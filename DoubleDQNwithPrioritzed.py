@@ -121,8 +121,11 @@ class Memory(object):  # stored as ( s, a, r, s_ ) in SumTree
 
     def batch_update(self, tree_idx, abs_errors):
         abs_errors += self.epsilon  # convert to abs and avoid 0
-        clipped_errors = np.minimum(abs_errors, self.abs_err_upper)
+        abs_errors=abs_errors.detach()
+        clipped_errors = np.minimum(np.array(abs_errors), self.abs_err_upper)
+        print("clipped_errors=",clipped_errors)
         ps = np.power(clipped_errors, self.alpha)
+        print("ps=",ps)
         for ti, p in zip(tree_idx, ps):
             self.tree.update(ti, p)
 
@@ -196,17 +199,21 @@ class DQN(object):
         #print("b_r=", b_r)
         q_target = b_r + GAMMA * q_next  # shape (batch, 1)
         #print("q_target=",q_target)
-        loss = self.loss_func(q_eval, q_target)
-        print("loss=",type(loss),loss)
-        ISWeights=np.mean(ISWeights, axis=0)
+        loss4backward = self.loss_func(q_eval, q_target)
+        print("loss4backward=",type(loss4backward),loss4backward)
+        ISWeights=np.mean(ISWeights, axis=1)
         print("ISWeights=",type(ISWeights),ISWeights)
-        loss=ISWeights*loss
-        abs_errors=np.sum(np.abs(q_target-q_eval),axis=1)
+        ISWeights = torch.from_numpy(ISWeights)
+        ISWeights=ISWeights.type(torch.FloatTensor)
+        loss=loss4backward*ISWeights
+        print("loss=", type(loss), loss)
+        abs_errors=torch.sum(torch.abs(q_target-q_eval),dim=1)
+        print("abs_errors=",abs_errors)
         self.memory.batch_update(tree_idx,abs_errors)
-        #print("loss=",loss)
+
 
         self.optimizer.zero_grad()
-        loss.backward()
+        loss4backward.backward()
         self.optimizer.step()
 
 dqn = DQN()
