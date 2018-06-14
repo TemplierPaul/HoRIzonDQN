@@ -4,6 +4,7 @@ from torch.autograd import Variable
 import torch.nn.functional as F
 import numpy as np
 import pandas as pd
+import matplotlib as plt
 
 
 # Hyper Parameters
@@ -19,14 +20,14 @@ TARGET_REPLACE_ITER = 10   # target update frequency
 MEMORY_CAPACITY = 500
 N_EPISODE=2000   #Number of files read (number of experiments)
 N_EXP_TOL=400    #If the game is running too long, go to the next experiment(temporarily not considered)
-
+N_ITERATION=10
 
 class Net(nn.Module):
-    def __init__(self, ):
+    def __init__(self):
         super(Net, self).__init__()
-        self.fc1 = nn.Linear(N_STATES, 50)
+        self.fc1 = nn.Linear(N_STATES, 32)
         self.fc1.weight.data.normal_(0, 0.1)   # initialization
-        self.out = nn.Linear(50, N_ACTIONS)
+        self.out = nn.Linear(32, N_ACTIONS)
         self.out.weight.data.normal_(0, 0.1)   # initialization
 
     def forward(self, x):
@@ -45,6 +46,7 @@ class DQN(object):
         self.memory = np.zeros((MEMORY_CAPACITY, N_STATES * 2 + 1 + 1))     # initialize memory
         self.optimizer = torch.optim.Adam(self.eval_net.parameters(), lr=LR)
         self.loss_func = nn.MSELoss()
+        self.cost = []
 
     def choose_action(self, x):
         action=np.array(EPI_FILE.ix[x, N_STATES :N_STATES+N_ACTIONS])
@@ -91,49 +93,53 @@ class DQN(object):
         q_target = b_r + GAMMA * q_next  # shape (batch, 1)
         #print("q_target=",q_target)
         loss = self.loss_func(q_eval, q_target)
-        print("loss=",loss)
+        self.cost.append(loss)
 
         self.optimizer.zero_grad()
         loss.backward()
         self.optimizer.step()
 
 dqn = DQN()
-
+costs=[]
 print('\nCollecting experience...')
-for i_episode in range(N_EPISODE):
-    str_filename="dataHorizon/out/up_"+str(i_episode)+".csv"
-    try:
-        EPI_FILE = pd.read_csv(str_filename)
-    except FileNotFoundError:
-        continue
-    N_EXP = EPI_FILE.iloc[:, 0].size
-    s_i = 0
-    s=np.array(EPI_FILE.ix[s_i, 0:N_STATES])
-    ep_r = 0
-    while (s_i<N_EXP-1):
+for i in range(0, N_ITERATION):
+    for i_episode in range(N_EPISODE):
+        str_filename="dataHorizon/out/up_"+str(i_episode)+".csv"
+        try:
+            EPI_FILE = pd.read_csv(str_filename)
+        except FileNotFoundError:
+            continue
+        N_EXP = EPI_FILE.iloc[:, 0].size
+        s_i = 0
+        s=np.array(EPI_FILE.ix[s_i, 0:N_STATES])
+        ep_r = 0
+        while (s_i<N_EXP-1):
 
 
 
-        # take action
-        a_index = dqn.choose_action(s_i)
+            # take action
+            a_index = dqn.choose_action(s_i)
 
-        r = np.array(EPI_FILE.ix[s_i, N_STATES+N_ACTIONS])
-        s_i=s_i+1
-        # if s_i>N_EXP_TOL:
-        #     break
-        s_next = np.array(EPI_FILE.ix[s_i, 0:N_STATES])
+            r = np.array(EPI_FILE.ix[s_i, N_STATES+N_ACTIONS])
+            s_i=s_i+1
+            # if s_i>N_EXP_TOL:
+            #     break
+            s_next = np.array(EPI_FILE.ix[s_i, 0:N_STATES])
 
 
-        dqn.store_transition(s, a_index, r, s_next)
+            dqn.store_transition(s, a_index, r, s_next)
 
-        ep_r += r
-        if dqn.memory_counter > MEMORY_CAPACITY:
-            dqn.learn()
-            print('Ep: ', i_episode,
-                '| Ep_r: ', round(ep_r, 2))
-            #print("weight=",dqn.target_net.fc1.weight)
+            ep_r += r
+            if dqn.memory_counter > MEMORY_CAPACITY:
+                dqn.learn()
+                print('Ep: ', i_episode,
+                    '| Ep_r: ', round(ep_r, 2))
+                #print("weight=",dqn.target_net.fc1.weight)
 
-        s = s_next
+            s = s_next
+    costs.append(np.squeeze(np.sum(dqn.cost)))
+    print(costs)
 
+plt.plot(costs)
 torch.save(dqn.eval_net, 'DoubleDQN_eval_net.pkl')
 torch.save(dqn.target_net, 'DoubbleDQN_target_net.pkl')
