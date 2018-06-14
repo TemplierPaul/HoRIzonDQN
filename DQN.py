@@ -22,7 +22,7 @@ N_EXP_TOL=400    #If the game is running too long, go to the next experiment(tem
 
 
 class Net(nn.Module):
-    def __init__(self, ):
+    def __init__(self):
         super(Net, self).__init__()
         self.fc1 = nn.Linear(N_STATES, 50)
         self.fc1.weight.data.normal_(0, 0.1)   # initialization

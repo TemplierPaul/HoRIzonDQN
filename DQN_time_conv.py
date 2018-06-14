@@ -19,19 +19,33 @@ TARGET_REPLACE_ITER = 10   # target update frequency
 MEMORY_CAPACITY = 1000
 N_EPISODE=2000   #Number of files read (number of experiments)
 N_EXP_TOL=400    #If the game is running too long, go to the next experiment(temporarily not considered)
-
+N_PAST_STATES = 10 #number of states taken for history in convolution
 
 class Net(nn.Module):
-    def __init__(self, ):
+    def __init__(self):
         super(Net, self).__init__()
         self.fc1 = nn.Linear(N_STATES, 50)
         self.fc1.weight.data.normal_(0, 0.1)   # initialization
         self.out = nn.Linear(50, N_ACTIONS)
         self.out.weight.data.normal_(0, 0.1)   # initialization
 
-    def forward(self, x):
+        self.conv1 = nn.Conv2d(3, 16, kernel_size=5, stride=2)
+        self.bn1 = nn.BatchNorm2d(16)
+        self.conv2 = nn.Conv2d(16, 32, kernel_size=5, stride=2)
+        self.bn2 = nn.BatchNorm2d(32)
+        self.conv3 = nn.Conv2d(32, 32, kernel_size=5, stride=2)
+        self.bn3 = nn.BatchNorm2d(32)
+        self.head = nn.Linear(448, 2)
+
+    def forward(self, x, prev):
+
         x = self.fc1(x)
         x = F.relu(x)
+
+        prev = F.relu(self.bn1(self.conv1(prev)))
+        prev = F.relu(self.bn2(self.conv2(prev)))
+        prev = F.relu(self.bn3(self.conv3(prev)))
+
         actions_value = self.out(x)
         return actions_value
 
