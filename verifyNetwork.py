@@ -18,26 +18,33 @@ TARGET_REPLACE_ITER = 10   # target update frequency
 MEMORY_CAPACITY = 1000
 N_EPISODE=2000   #Number of files read (number of experiments)
 N_EXP_TOL=400    #If the game is running too long, go to the next experiment(temporarily not considered)
-
+N_NEURAL=32
+N_EPISODE=660
 class Net(nn.Module):
-    def __init__(self, ):
+    def __init__(self):
         super(Net, self).__init__()
-        self.fc1 = nn.Linear(N_STATES, 50)
+        self.fc1 = nn.Linear(N_STATES, N_NEURAL)
         self.fc1.weight.data.normal_(0, 0.1)   # initialization
-        self.out = nn.Linear(50, N_ACTIONS)
+        self.fc2 = nn.Linear(N_NEURAL, N_NEURAL)
+        self.fc2.weight.data.normal_(0, 0.1)   # initialization
+        self.out = nn.Linear(N_NEURAL, N_ACTIONS)
         self.out.weight.data.normal_(0, 0.1)   # initialization
 
     def forward(self, x):
         x = self.fc1(x)
         x = F.relu(x)
+        x = self.fc2(x)
+        x = F.relu(x)
         actions_value = self.out(x)
         return actions_value
+
 
 class SavedNet(object):
 
     def __init__(self):
-        self.net = Net()
-        net= torch.load('DQN_target_net.pkl')
+        self.net = torch.load('SavedNetwork/2018-06-17-22-40-17DQN_target_net.pkl')
+
+        #self.net = Net()
 
     def orig_action(self, x):
         action=np.array(EPI_FILE.ix[x, N_STATES :N_STATES+N_ACTIONS])
@@ -49,38 +56,39 @@ class SavedNet(object):
                 break
         return action_index
 
-    def choose_action(self,s):
+    def choose_action(self,s,orig_action):
         s = Variable(torch.FloatTensor(s))
         q_next = self.net(s).detach()  # detach from graph, don't backpropagate/value of all the actions
-        print(q_next)
-        #q_target = b_r + GAMMA * q_next.max(1)[0].view(BATCH_SIZE, 1)  # shape (batch, 1)
-
-
+        q_next=q_next.numpy()
+        return (np.argmax(q_next)==orig_action)
 
 NetToVerify=SavedNet()
+TestAcc=[]
+for i_episode in range(N_EPISODE,1200):
+    str_filename = "dataHorizon/outNorm/up_" + str(i_episode) + ".csv"
+    try:
+        EPI_FILE = pd.read_csv(str_filename)
+    except FileNotFoundError:
+        continue
+    EPI_FILE = pd.read_csv(str_filename)
 
-str_filename="verify.csv"
-EPI_FILE = pd.read_csv(str_filename)
+    N_EXP = EPI_FILE.iloc[:, 0].size
+    s_i = 0
+    s=np.array(EPI_FILE.ix[s_i, 0:N_STATES])
+    ep_r = 0
+    while (s_i<N_EXP-1):
 
-N_EXP = EPI_FILE.iloc[:, 0].size
-s_i = 0
-s=np.array(EPI_FILE.ix[s_i, 0:N_STATES])
-ep_r = 0
-while (s_i<N_EXP-1):
+        # take action
+        orig_action = NetToVerify.orig_action(s_i)
+        TestAcc.append(int(NetToVerify.choose_action(s,orig_action)))
+        print("TestAccuarcy=",np.mean(TestAcc))
 
-    # take action
-    a_orig = NetToVerify.orig_action(s_i)
-    print("a_orig=",a_orig)
-    NetToVerify.choose_action(s)
-    r = np.array(EPI_FILE.ix[s_i, N_STATES+N_ACTIONS])
-    s_i=s_i+1
-    # if s_i>N_EXP_TOL:
-    #     break
-    s_next = np.array(EPI_FILE.ix[s_i, 0:N_STATES])
+        r = np.array(EPI_FILE.ix[s_i, N_STATES+N_ACTIONS])
+        s_i=s_i+1
+        # if s_i>N_EXP_TOL:
+        #     break
+        s_next = np.array(EPI_FILE.ix[s_i, 0:N_STATES])
+        print('Ep: ', i_episode)
 
-
-    ep_r += r
-
-
-    s = s_next
+        s = s_next
 

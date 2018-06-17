@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import time
 
 # Hyper Parameters
-EPI_FILE = pd.read_csv("dataHorizon/out/up_0.csv")
+EPI_FILE = pd.read_csv("dataHorizon/outNorm/up_0.csv")
 N_ACTIONS = 10
 N_STATES = EPI_FILE.columns.size - N_ACTIONS - 1
 print("N_ACTIONS:", N_ACTIONS)
@@ -18,9 +18,9 @@ EPSILON = 0.9               # greedy policy
 GAMMA = 0.9                 # reward discount
 TARGET_REPLACE_ITER = 10   # target update frequency
 MEMORY_CAPACITY = 500
-N_EPISODE=2000   #Number of files read (number of experiments)
+N_EPISODE=660  #Number of files read (number of experiments)
 N_EXP_TOL=400    #If the game is running too long, go to the next experiment(temporarily not considered)
-N_ITERATION=10
+N_ITERATION=20
 N_NEURAL=32
 
 class Net(nn.Module):
@@ -109,7 +109,7 @@ costs=[]
 print('\nCollecting experience...')
 for i in range(0, N_ITERATION):
     for i_episode in range(N_EPISODE):
-        str_filename="dataHorizon/out/up_"+str(i_episode)+".csv"
+        str_filename="dataHorizon/outNorm/up_"+str(i_episode)+".csv"
         try:
             EPI_FILE = pd.read_csv(str_filename)
         except FileNotFoundError:
@@ -117,7 +117,6 @@ for i in range(0, N_ITERATION):
         N_EXP = EPI_FILE.iloc[:, 0].size
         s_i = 0
         s=np.array(EPI_FILE.ix[s_i, 0:N_STATES])
-        ep_r = 0
         while (s_i<N_EXP-1):
 
 
@@ -134,11 +133,10 @@ for i in range(0, N_ITERATION):
 
             dqn.store_transition(s, a_index, r, s_next)
 
-            ep_r += r
             if dqn.memory_counter > MEMORY_CAPACITY:
                 dqn.learn()
                 print('Ep: ', i_episode,
-                    '| Ep_r: ', round(ep_r, 2))
+                    '| Ep_r: ', r)
                 #print("weight=",dqn.target_net.fc1.weight)
 
             s = s_next
@@ -146,8 +144,11 @@ for i in range(0, N_ITERATION):
     print(costs)
 
 
-torch.save(dqn.eval_net,time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'DoubleDQN_eval_net.pkl')
-torch.save(dqn.target_net, time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+ 'DoubbleDQN_target_net.pkl')
+torch.save(dqn.eval_net,'SavedNetwork/'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'DoubleDQN_eval_net.pkl')
+torch.save(dqn.target_net, 'SavedNetwork/'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+ 'DoubbleDQN_target_net.pkl')
+log = open('Log/log'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'DoubleDQN.txt', 'w')
+log.write("cost value="+str(costs))
+log.close()
 plt.plot(costs)
 plt.ylabel('cost')
 plt.xlabel('iterations')
