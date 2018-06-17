@@ -4,10 +4,11 @@ from torch.autograd import Variable
 import torch.nn.functional as F
 import numpy as np
 import pandas as pd
-import matplotlib as plt
+import matplotlib.pyplot as plt
+import time
 
 # Hyper Parameters
-EPI_FILE = pd.read_csv("dataHorizon/out/up_0.csv")
+EPI_FILE = pd.read_csv("dataHorizon/outNorm/up_0.csv")
 N_ACTIONS = 10
 N_STATES = EPI_FILE.columns.size - N_ACTIONS - 1
 print("N_STATES:", N_STATES)
@@ -18,20 +19,25 @@ EPSILON = 0.9               # greedy policy
 GAMMA = 0.9                 # reward discount
 TARGET_REPLACE_ITER = 10   # target update frequency
 MEMORY_CAPACITY = 1000
-N_EPISODE=2000   #Number of files read (number of experiments)
+N_EPISODE=660   #Number of files read (number of experiments)600/200/200 training/dev/test
 N_EXP_TOL=400    #If the game is running too long, go to the next experiment(temporarily not considered)
 N_ITERATION=10
+N_NEURAL=32
 
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
-        self.fc1 = nn.Linear(N_STATES, 32)
+        self.fc1 = nn.Linear(N_STATES, N_NEURAL)
         self.fc1.weight.data.normal_(0, 0.1)   # initialization
-        self.out = nn.Linear(32, N_ACTIONS)
+        self.fc2 = nn.Linear(N_NEURAL, N_NEURAL)
+        self.fc2.weight.data.normal_(0, 0.1)   # initialization
+        self.out = nn.Linear(N_NEURAL, N_ACTIONS)
         self.out.weight.data.normal_(0, 0.1)   # initialization
 
     def forward(self, x):
         x = self.fc1(x)
+        x = F.relu(x)
+        x = self.fc2(x)
         x = F.relu(x)
         actions_value = self.out(x)
         return actions_value
@@ -87,7 +93,7 @@ class DQN(object):
         #print("q_eval=",q_eval)
         #print("q_target=",q_target)
         loss = self.loss_func(q_eval, q_target)
-        self.cost.append(loss)
+        self.cost.append(loss.detach().numpy())
         #print("loss=",loss)
         self.optimizer.zero_grad()
         loss.backward()
@@ -96,7 +102,7 @@ class DQN(object):
 dqn = DQN()
 costs=[]
 print('\nCollecting experience...')
-for i in range(0, N_ITERATION):
+for i in range(0, 10):
     dqn.cost=[]
     for i_episode in range(N_EPISODE):
         str_filename="dataHorizon/out/up_"+str(i_episode)+".csv"
@@ -131,9 +137,15 @@ for i in range(0, N_ITERATION):
                 #print("weight=",dqn.target_net.fc1.weight)
 
             s = s_next
-    costs.append(np.squeeze(np.sum(dqn.cost)))
+
+    costs.append(np.mean(dqn.cost))
     print(costs)
 
+
+torch.save(dqn.eval_net, time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'DQN_eval_net.pkl')
+torch.save(dqn.target_net, time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'DQN_target_net.pkl')
 plt.plot(costs)
-torch.save(dqn.eval_net, 'DQN_eval_net.pkl')
-torch.save(dqn.target_net, 'DQN_target_net.pkl')
+plt.ylabel('cost')
+plt.xlabel('iterations')
+plt.show()
+

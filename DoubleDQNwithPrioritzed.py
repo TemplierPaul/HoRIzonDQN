@@ -4,8 +4,8 @@ from torch.autograd import Variable
 import torch.nn.functional as F
 import numpy as np
 import pandas as pd
-import matplotlib as plt
-
+import matplotlib.pyplot as plt
+import time
 
 # Hyper Parameters
 EPI_FILE = pd.read_csv("dataHorizon/out/up_0.csv")
@@ -21,6 +21,7 @@ MEMORY_CAPACITY = 500
 N_EPISODE=2000   #Number of files read (number of experiments)
 N_EXP_TOL=400    #If the game is running too long, go to the next experiment(temporarily not considered)
 N_ITERATION=10
+N_NEURAL=32
 
 class SumTree(object):
     """
@@ -135,17 +136,20 @@ class Memory(object):  # stored as ( s, a, r, s_ ) in SumTree
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
-        self.fc1 = nn.Linear(N_STATES, 50)
+        self.fc1 = nn.Linear(N_STATES, N_NEURAL)
         self.fc1.weight.data.normal_(0, 0.1)   # initialization
-        self.out = nn.Linear(50, N_ACTIONS)
+        self.fc2 = nn.Linear(N_NEURAL, N_NEURAL)
+        self.fc2.weight.data.normal_(0, 0.1)   # initialization
+        self.out = nn.Linear(N_NEURAL, N_ACTIONS)
         self.out.weight.data.normal_(0, 0.1)   # initialization
 
     def forward(self, x):
         x = self.fc1(x)
         x = F.relu(x)
+        x = self.fc2(x)
+        x = F.relu(x)
         actions_value = self.out(x)
         return actions_value
-
 
 class DQN(object):
     def __init__(self):
@@ -204,7 +208,7 @@ class DQN(object):
         #print("q_target=",q_target)
         loss4backward = self.loss_func(q_eval, q_target)
         #print("loss4backward=",type(loss4backward),loss4backward)
-        self.cost.append(loss4backward)
+        self.cost.append(loss4backward.detach().numpy())
         ISWeights=np.mean(ISWeights, axis=1)
         #print("ISWeights=",type(ISWeights),ISWeights)
         ISWeights = torch.from_numpy(ISWeights)
@@ -258,9 +262,13 @@ for i in range(0, N_ITERATION):
                 #print("weight=",dqn.target_net.fc1.weight)
 
             s = s_next
-    costs.append(np.squeeze(np.sum(dqn.cost)))
+    costs.append(np.mean(dqn.cost))
     print(costs)
 
+
+torch.save(dqn.eval_net, time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'DoubleDQNwithPrior_eval_net.pkl')
+torch.save(dqn.target_net, time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'DoubbleDQNwithPrior_target_net.pkl')
 plt.plot(costs)
-torch.save(dqn.eval_net, 'DoubleDQNwithPrior_eval_net.pkl')
-torch.save(dqn.target_net, 'DoubbleDQNwithPrior_target_net.pkl')
+plt.ylabel('cost')
+plt.xlabel('iterations')
+plt.show()
