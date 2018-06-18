@@ -20,13 +20,14 @@ MEMORY_CAPACITY = 1000
 N_EPISODE=2000   #Number of files read (number of experiments)
 N_EXP_TOL=400    #If the game is running too long, go to the next experiment(temporarily not considered)
 N_PAST_STATES = 10 #number of states taken for history in convolution
+N_CONV_OUT = N_STATES
 
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
 
         self.conv = torch.nn.Sequential()
-        self.conv.add_module("conv_1", torch.nn.Conv2d(1, 10, kernel_size=5))
+        self.conv.add_module("conv_1", torch.nn.Conv2d(1, 10, kernel_size=3))
         self.conv.add_module("maxpool_1", torch.nn.MaxPool2d(kernel_size=2))
         self.conv.add_module("relu_1", torch.nn.ReLU())
         self.conv.add_module("conv_2", torch.nn.Conv2d(10, 20, kernel_size=5))
@@ -38,7 +39,12 @@ class Net(nn.Module):
         self.fc.add_module("fc1", torch.nn.Linear(320, 50))
         self.fc.add_module("relu_3", torch.nn.ReLU())
         self.fc.add_module("dropout_3", torch.nn.Dropout())
-        self.fc.add_module("fc2", torch.nn.Linear(50, N_ACTIONS))
+        self.fc.add_module("fc2", torch.nn.Linear(50, N_CONV_OUT))
+
+        self.fc1 = nn.Linear(N_STATES + N_CONV_OUT, 50)
+        self.fc1.weight.data.normal_(0, 0.1)   # initialization
+        self.out = nn.Linear(50, N_ACTIONS)
+        self.out.weight.data.normal_(0, 0.1)   # initialization
 
     def forward(self, x, prev):
 
@@ -46,11 +52,10 @@ class Net(nn.Module):
         prev = x.view(-1, 320)
         prev = self.fc.forward(x)
 
-        x =
-        x = self.fc1(x)
-        x = F.relu(x)
-
-        actions_value = self.out(x)
+        combined = torch.cat(x, prev)
+        combined = self.fc1(combined)
+        combined = F.relu(combined)
+        actions_value = self.out(combined)
         return actions_value
 
 
