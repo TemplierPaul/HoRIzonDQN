@@ -94,7 +94,19 @@ class DQN(object):
 
         # sample batch transitions
         sample_index = np.random.choice(MEMORY_CAPACITY, BATCH_SIZE)
-        b_memory = self.memory[sample_index, :]
+        b_memory = self.memory[sample_index , :]
+        mem = []
+        for i in sample_index:
+            if (i >= N_PAST_STATES):
+                mem += self.memory[i - N_PAST_STATES : i, :N_STATES]
+            else :
+                mem += []
+                for j in range (N_PAST_STATES - i):
+                    mem [-1] = np.concatenate(mem[-1], self.memory[0, :N_STATES])
+                mem [-1] +=  np.concatenate(mem[-1], self.memory[1 : i, :N_STATES])
+
+
+        b_prev_s =  Variable(torch.FloatTensor(mem))
         b_s = Variable(torch.FloatTensor(b_memory[:, :N_STATES]))
         b_a = Variable(torch.LongTensor(b_memory[:, N_STATES:N_STATES+1].astype(int)))
         #print("b_a=",b_a)
