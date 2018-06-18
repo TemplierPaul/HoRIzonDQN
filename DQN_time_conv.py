@@ -24,27 +24,31 @@ N_PAST_STATES = 10 #number of states taken for history in convolution
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
-        self.fc1 = nn.Linear(N_STATES, 50)
-        self.fc1.weight.data.normal_(0, 0.1)   # initialization
-        self.out = nn.Linear(50, N_ACTIONS)
-        self.out.weight.data.normal_(0, 0.1)   # initialization
 
-        self.conv1 = nn.Conv2d(3, 16, kernel_size=5, stride=2)
-        self.bn1 = nn.BatchNorm2d(16)
-        self.conv2 = nn.Conv2d(16, 32, kernel_size=5, stride=2)
-        self.bn2 = nn.BatchNorm2d(32)
-        self.conv3 = nn.Conv2d(32, 32, kernel_size=5, stride=2)
-        self.bn3 = nn.BatchNorm2d(32)
-        self.head = nn.Linear(448, 2)
+        self.conv = torch.nn.Sequential()
+        self.conv.add_module("conv_1", torch.nn.Conv2d(1, 10, kernel_size=5))
+        self.conv.add_module("maxpool_1", torch.nn.MaxPool2d(kernel_size=2))
+        self.conv.add_module("relu_1", torch.nn.ReLU())
+        self.conv.add_module("conv_2", torch.nn.Conv2d(10, 20, kernel_size=5))
+        self.conv.add_module("dropout_2", torch.nn.Dropout())
+        self.conv.add_module("maxpool_2", torch.nn.MaxPool2d(kernel_size=2))
+        self.conv.add_module("relu_2", torch.nn.ReLU())
+
+        self.fc = torch.nn.Sequential()
+        self.fc.add_module("fc1", torch.nn.Linear(320, 50))
+        self.fc.add_module("relu_3", torch.nn.ReLU())
+        self.fc.add_module("dropout_3", torch.nn.Dropout())
+        self.fc.add_module("fc2", torch.nn.Linear(50, N_ACTIONS))
 
     def forward(self, x, prev):
 
+        prev = self.conv.forward(x)
+        prev = x.view(-1, 320)
+        prev = self.fc.forward(x)
+
+        x =
         x = self.fc1(x)
         x = F.relu(x)
-
-        prev = F.relu(self.bn1(self.conv1(prev)))
-        prev = F.relu(self.bn2(self.conv2(prev)))
-        prev = F.relu(self.bn3(self.conv3(prev)))
 
         actions_value = self.out(x)
         return actions_value
