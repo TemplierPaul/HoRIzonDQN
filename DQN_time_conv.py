@@ -11,6 +11,7 @@ EPI_FILE = pd.read_csv("dataHorizon/out/up_0.csv")
 N_ACTIONS = 10
 N_STATES = EPI_FILE.columns.size - N_ACTIONS - 1
 print("N_ACTIONS:", N_ACTIONS)
+print("N_STATES:", N_STATES)
 BATCH_SIZE = 32   # Number of samples selected per study
 LR = 0.01                   # learning rate
 EPSILON = 0.9               # greedy policy
@@ -99,13 +100,13 @@ class DQN(object):
         mem = []
         for i in sample_index:
             if (i >= N_PAST_STATES):
-                mem += self.memory[i - N_PAST_STATES : i, :N_STATES]
+                mem.append(self.memory[i - N_PAST_STATES : i, :N_STATES])
                 print (i + ' < N_PAST_STATES ' + mem[-1].shape)
             else :
-                mem += []
+                mem.append([])
                 for j in range (N_PAST_STATES - i):
                     mem [-1] = np.concatenate(mem[-1], self.memory[0, :N_STATES])
-                mem [-1] +=  np.concatenate(mem[-1], self.memory[0 : i, :N_STATES])
+                mem [-1] =  np.concatenate(mem[-1], self.memory[0 : i, :N_STATES])
                 print (i + ' > N_PAST_STATES ' + mem[-1].shape)
 
         b_prev_s =  Variable(torch.FloatTensor(mem))
