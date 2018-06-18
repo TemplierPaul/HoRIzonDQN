@@ -103,8 +103,7 @@ class DQN(object):
                 mem += []
                 for j in range (N_PAST_STATES - i):
                     mem [-1] = np.concatenate(mem[-1], self.memory[0, :N_STATES])
-                mem [-1] +=  np.concatenate(mem[-1], self.memory[1 : i, :N_STATES])
-
+                mem [-1] +=  np.concatenate(mem[-1], self.memory[0 : i, :N_STATES])
 
         b_prev_s =  Variable(torch.FloatTensor(mem))
         b_s = Variable(torch.FloatTensor(b_memory[:, :N_STATES]))
@@ -113,8 +112,8 @@ class DQN(object):
         b_r = Variable(torch.FloatTensor(b_memory[:, N_STATES+1:N_STATES+1+1]))
         b_s_ = Variable(torch.FloatTensor(b_memory[:, -N_STATES:]))
         # q_eval w.r.t the action in experience
-        q_eval = self.eval_net(b_s).gather(1, b_a )# shape (batch, 1)//value of the chosen action
-        q_next = self.target_net(b_s_).detach()     # detach from graph, don't backpropagate/value of all the actions
+        q_eval = self.eval_net(b_s, b_prev_s).gather(1, b_a )# shape (batch, 1)//value of the chosen action
+        q_next = self.target_net(b_s_, b_prev_s).detach()     # detach from graph, don't backpropagate/value of all the actions
         q_target = b_r + GAMMA * q_next.max(1)[0].view(BATCH_SIZE, 1)   # shape (batch, 1)
         #print("b_a=",b_a)
         #print("q_eval=",q_eval)
