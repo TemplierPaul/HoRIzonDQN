@@ -95,7 +95,7 @@ class DQN(object):
 
         # sample batch transitions
         sample_index = np.random.choice(MEMORY_CAPACITY, BATCH_SIZE)
-        print ('Sample index : " + sample_index)
+        print ("Sample index : " + sample_index)
         b_memory = self.memory[sample_index , :]
         mem = []
         for i in sample_index:
