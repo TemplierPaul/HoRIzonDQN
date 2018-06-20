@@ -9,7 +9,7 @@ import time
 
 T_START = time.time()
 # Hyper Parameters
-EPI_FILE = pd.read_csv("dataHorizon/out/up_0.csv")
+EPI_FILE = pd.read_csv("dataHorizon/out/up_3.csv")
 N_ACTIONS = 10
 N_STATES = EPI_FILE.columns.size - N_ACTIONS - 1
 print("N_ACTIONS:", N_ACTIONS)
@@ -19,14 +19,14 @@ LR = 0.01                   # learning rate
 EPSILON = 0.9               # greedy policy
 GAMMA = 0.9                 # reward discount
 TARGET_REPLACE_ITER = 10   # target update frequency
-MEMORY_CAPACITY = 100
-N_EPISODE=2   #Number of files read (number of experiments)
+MEMORY_CAPACITY = 1000
+N_EPISODE=20#Number of files read (number of experiments)
 N_EXP_TOL=400    #If the game is running too long, go to the next experiment(temporarily not considered)
-N_ITERATION=2
+N_ITERATION=10
 N_NEURAL=32
 
 N_PAST_STATES = 10 #number of states taken for history in convolution
-N_CONV_OUT = N_STATES
+N_CONV_OUT = 10
 N_LINEAR_IN = 400
 
 class Net(nn.Module):
@@ -193,12 +193,12 @@ for i in range(0, N_ITERATION):
             s = s_next
 
     costs.append(np.mean(dqn.cost))
-    print(costs)
+    print('Time : ', time.time() - T_START, 'Cost : ', costs)
 
 
-torch.save(dqn.eval_net, 'SavedNetwork/'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'DQN_eval_net.pkl')
-torch.save(dqn.target_net, 'SavedNetwork/'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'DQN_target_net.pkl')
-log = open('Log/log'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'DQN.txt', 'w')
+torch.save(dqn.eval_net, 'SavedNetwork/'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'-Conv_CPU_eval.pkl')
+torch.save(dqn.target_net, 'SavedNetwork/'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'-Conv_CPU_target.pkl')
+log = open('Log/log'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'-Conv_CPU.txt', 'w')
 log.write("cost value="+str(costs))
 log.close()
 plt.plot(costs)

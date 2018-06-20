@@ -7,41 +7,78 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import time
 
+device = torch.device('cpu')
+device = torch.device('cuda') # Uncomment this to run on GPU
+
 T_START = time.time()
 # Hyper Parameters
-EPI_FILE = pd.read_csv("dataHorizon/out/up_3.csv")
+EPI_FILE = pd.read_csv("dataHorizon/out/up_0.csv")
 N_ACTIONS = 10
 N_STATES = EPI_FILE.columns.size - N_ACTIONS - 1
-print("N_STATES:", N_STATES)
 print("N_ACTIONS:", N_ACTIONS)
+print("N_STATES:", N_STATES)
 BATCH_SIZE = 32   # Number of samples selected per study
 LR = 0.01                   # learning rate
 EPSILON = 0.9               # greedy policy
 GAMMA = 0.9                 # reward discount
 TARGET_REPLACE_ITER = 10   # target update frequency
-MEMORY_CAPACITY = 1000
+MEMORY_CAPACITY = 100
 N_EPISODE=20   #Number of files read (number of experiments)
 N_EXP_TOL=400    #If the game is running too long, go to the next experiment(temporarily not considered)
-N_ITERATION=20
+N_ITERATION=5
 N_NEURAL=32
 
+N_PAST_STATES = 10 #number of states taken for history in convolution
+N_CONV_OUT = N_STATES
+N_LINEAR_IN = 400
 
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
-        self.fc1 = nn.Linear(N_STATES, N_NEURAL)
+
+        self.conv = torch.nn.Sequential(
+            torch.nn.Conv2d(1, 100, kernel_size=3),
+            torch.nn.MaxPool2d(kernel_size=2),
+            torch.nn.ReLU(),
+            torch.nn.Conv2d(100, 20, kernel_size=3),
+            torch.nn.Dropout(),
+            torch.nn.MaxPool2d(kernel_size=2),
+            torch.nn.ReLU(),
+        ).to(device)
+
+        self.fc = torch.nn.Sequential(
+        torch.nn.Linear(N_LINEAR_IN, 50),
+        torch.nn.ReLU(),
+        torch.nn.Dropout(),
+        torch.nn.Linear(50, N_CONV_OUT),
+        ).to(device)
+
+        self.fc1 = nn.Linear(N_STATES + N_CONV_OUT, N_NEURAL, device=device)
         self.fc1.weight.data.normal_(0, 0.1)   # initialization
-        self.fc2 = nn.Linear(N_NEURAL, N_NEURAL)
+        self.fc2 = nn.Linear(N_NEURAL, N_NEURAL, device=device)
         self.fc2.weight.data.normal_(0, 0.1)   # initialization
-        self.out = nn.Linear(N_NEURAL, N_ACTIONS)
+        self.out = nn.Linear(N_NEURAL, N_ACTIONS, device=device)
         self.out.weight.data.normal_(0, 0.1)   # initialization
 
-    def forward(self, x):
-        x = self.fc1(x)
-        x = F.relu(x)
-        x = self.fc2(x)
-        x = F.relu(x)
-        actions_value = self.out(x)
+    def forward(self, x, prev):
+        # print ("Forward : x, prev = ")
+        # print (x.shape)
+        # print(prev.shape)
+
+        prev = self.conv.forward(prev)
+        prev = prev.view(-1, N_LINEAR_IN)
+        prev = self.fc.forward(prev)
+
+        # print ("Apres CNN : x, prev")
+        # print(x.shape)
+        # print(prev.shape)
+        combined = torch.cat((x, prev),1).to(device)
+        # print(combined.shape)
+        combined = self.fc1(combined)
+        combined = F.relu(combined)
+        combined = self.fc2(combined)
+        combined = F.relu(combined)
+        actions_value = self.out(combined)
         return actions_value
 
 
@@ -80,16 +117,36 @@ class DQN(object):
         self.learn_step_counter += 1
 
         # sample batch transitions
-        sample_index = np.random.choice(MEMORY_CAPACITY, BATCH_SIZE)
-        b_memory = self.memory[sample_index, :]
-        b_s = Variable(torch.FloatTensor(b_memory[:, :N_STATES]))
-        b_a = Variable(torch.LongTensor(b_memory[:, N_STATES:N_STATES+1].astype(int)))
+        sample_index = np.random.choice(range(N_PAST_STATES,MEMORY_CAPACITY), BATCH_SIZE)
+        # print("Sample index : ")
+        # print(sample_index)
+        b_memory = self.memory[sample_index , :]
+        mem = []
+        for i in sample_index:
+            if (i >= N_PAST_STATES):
+                mem.append(self.memory[i - N_PAST_STATES : i, :N_STATES])
+                #print (str(i) + ' < N_PAST_STATES ')
+                #print(mem[-1].shape)
+            else :
+                mem.append([])
+                for j in range (N_PAST_STATES - i):
+                    mem [-1] = np.concatenate(mem[-1], self.memory[0, :N_STATES])
+                mem [-1] =  np.concatenate(mem[-1], self.memory[0 : i, :N_STATES])
+                print (str(i) + ' > N_PAST_STATES ')
+                print (mem[-1].shape)
+        b_prev_s =  Variable(torch.FloatTensor(mem)).to(device)
+        # print (b_prev_s.shape)
+        b_prev_s = torch.unsqueeze(b_prev_s, 1).to(device)
+        # print(b_prev_s.shape)
+        b_s = Variable(torch.FloatTensor(b_memory[:, :N_STATES])).to(device)
+        # print(b_s.shape)
+        b_a = Variable(torch.LongTensor(b_memory[:, N_STATES:N_STATES+1].astype(int))).to(device)
         #print("b_a=",b_a)
-        b_r = Variable(torch.FloatTensor(b_memory[:, N_STATES+1:N_STATES+1+1]))
-        b_s_ = Variable(torch.FloatTensor(b_memory[:, -N_STATES:]))
+        b_r = Variable(torch.FloatTensor(b_memory[:, N_STATES+1:N_STATES+1+1])).to(device)
+        b_s_ = Variable(torch.FloatTensor(b_memory[:, -N_STATES:])).to(device)
         # q_eval w.r.t the action in experience
-        q_eval = self.eval_net(b_s).gather(1, b_a )# shape (batch, 1)//value of the chosen action
-        q_next = self.target_net(b_s_).detach()     # detach from graph, don't backpropagate/value of all the actions
+        q_eval = self.eval_net(b_s, b_prev_s).gather(1, b_a )# shape (batch, 1)//value of the chosen action
+        q_next = self.target_net(b_s_, b_prev_s).detach()     # detach from graph, don't backpropagate/value of all the actions
         q_target = b_r + GAMMA * q_next.max(1)[0].view(BATCH_SIZE, 1)   # shape (batch, 1)
         #print("b_a=",b_a)
         #print("q_eval=",q_eval)
@@ -100,6 +157,7 @@ class DQN(object):
         self.optimizer.zero_grad()
         loss.backward()
         self.optimizer.step()
+
 
 dqn = DQN()
 costs=[]
@@ -132,20 +190,20 @@ for i in range(0, N_ITERATION):
 
             if dqn.memory_counter > MEMORY_CAPACITY:
                 dqn.learn()
-                print("cost=",np.sum(dqn.cost))
-                print('Ep: ', i_episode,
-                    '| Ep_r: ', r, '|Time: ', time.time()-T_START)
-                #print("weight=",dqn.target_net.fc1.weight)
+                # print("cost=",np.sum(dqn.cost))
+                # print('Ep: ', i_episode,
+                #     '| Ep_r: ', r, '|Time: ', time.time()-T_START)
+                # print("weight=",dqn.target_net.fc1.weight)
 
             s = s_next
 
     costs.append(np.mean(dqn.cost))
-    print(costs)
+    print('Time : ', time.time()-T_START, 'Cost : ', costs)
 
 
-torch.save(dqn.eval_net, 'SavedNetwork/'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'DQN_eval_net.pkl')
-torch.save(dqn.target_net, 'SavedNetwork/'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'DQN_target_net.pkl')
-log = open('Log/log'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'DQN.txt', 'w')
+torch.save(dqn.eval_net, 'SavedNetwork/'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'-Conv_GPU_eval.pkl')
+torch.save(dqn.target_net, 'SavedNetwork/'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'-Conv_GPU_target.pkl')
+log = open('Log/log'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'-Conv_GPU.txt', 'w')
 log.write("cost value="+str(costs))
 log.close()
 plt.plot(costs)
