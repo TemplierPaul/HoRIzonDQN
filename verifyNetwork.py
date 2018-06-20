@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 
 # Hyper Parameters
-EPI_FILE = pd.read_csv("dataHorizon/out/up_0.csv")
+EPI_FILE = pd.read_csv("dataHorizon/outNorm/up_0.csv")
 N_ACTIONS = 10
 N_STATES = EPI_FILE.columns.size - N_ACTIONS - 1
 print("N_ACTIONS:", N_ACTIONS)
@@ -23,11 +23,11 @@ N_EPISODE=660
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
-        self.fc1 = nn.Linear(N_STATES, N_NEURAL)
+        self.fc1 = nn.Linear(N_STATES, 32)
         self.fc1.weight.data.normal_(0, 0.1)   # initialization
-        self.fc2 = nn.Linear(N_NEURAL, N_NEURAL)
+        self.fc2 = nn.Linear(32, 16)
         self.fc2.weight.data.normal_(0, 0.1)   # initialization
-        self.out = nn.Linear(N_NEURAL, N_ACTIONS)
+        self.out = nn.Linear(16, N_ACTIONS)
         self.out.weight.data.normal_(0, 0.1)   # initialization
 
     def forward(self, x):
@@ -42,8 +42,8 @@ class Net(nn.Module):
 class SavedNet(object):
 
     def __init__(self):
-        self.net = torch.load('SavedNetwork/2018-06-17-22-40-17DQN_target_net.pkl')
-
+        self.net = torch.load('SavedNetwork/2018-06-20-09-46-32DoubbleDQN_target_net.pkl')
+        print(self.net)
         #self.net = Net()
 
     def orig_action(self, x):
@@ -58,13 +58,17 @@ class SavedNet(object):
 
     def choose_action(self,s,orig_action):
         s = Variable(torch.FloatTensor(s))
+        print("state=",s)
         q_next = self.net(s).detach()  # detach from graph, don't backpropagate/value of all the actions
         q_next=q_next.numpy()
+        print("Orginal Action=",orig_action)
+        print("Q-values=",q_next)
+        print("Chosen Action=",np.argmax(q_next))
         return (np.argmax(q_next)==orig_action)
 
 NetToVerify=SavedNet()
 TestAcc=[]
-for i_episode in range(N_EPISODE,1200):
+for i_episode in range(660,1300):
     str_filename = "dataHorizon/outNorm/up_" + str(i_episode) + ".csv"
     try:
         EPI_FILE = pd.read_csv(str_filename)
@@ -75,6 +79,7 @@ for i_episode in range(N_EPISODE,1200):
     N_EXP = EPI_FILE.iloc[:, 0].size
     s_i = 0
     s=np.array(EPI_FILE.ix[s_i, 0:N_STATES])
+
     ep_r = 0
     while (s_i<N_EXP-1):
 
@@ -91,4 +96,5 @@ for i_episode in range(N_EPISODE,1200):
         print('Ep: ', i_episode)
 
         s = s_next
+        #print(s)
 

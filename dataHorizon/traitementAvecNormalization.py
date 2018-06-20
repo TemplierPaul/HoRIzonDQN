@@ -137,7 +137,7 @@ for nom in os.listdir('.'):
                 mydata.at[ligne[0], 'score'] = 1
             onfire = trees.count('true')
 
-            leaks = info[6].split('-')
+            leaks = info[11].split('-')
             for i in range(0, 9):
                 if leaks[i] == 'true':
                     mydata.at[ligne[0], 'leak' + str(i)] = 1

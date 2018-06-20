@@ -19,7 +19,7 @@ EPSILON = 0.9               # greedy policy
 GAMMA = 0.9                 # reward discount
 TARGET_REPLACE_ITER = 10   # target update frequency
 MEMORY_CAPACITY = 1000
-N_EPISODE=660   #Number of files read (number of experiments)600/200/200 training/dev/test
+N_EPISODE=1150   #Number of files read (number of experiments)600/200/200 training/dev/test
 N_EXP_TOL=400    #If the game is running too long, go to the next experiment(temporarily not considered)
 N_ITERATION=20
 N_NEURAL=32
@@ -27,11 +27,11 @@ N_NEURAL=32
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
-        self.fc1 = nn.Linear(N_STATES, N_NEURAL)
+        self.fc1 = nn.Linear(N_STATES, 32)
         self.fc1.weight.data.normal_(0, 0.1)   # initialization
-        self.fc2 = nn.Linear(N_NEURAL, N_NEURAL)
+        self.fc2 = nn.Linear(32,16)
         self.fc2.weight.data.normal_(0, 0.1)   # initialization
-        self.out = nn.Linear(N_NEURAL, N_ACTIONS)
+        self.out = nn.Linear(16, N_ACTIONS)
         self.out.weight.data.normal_(0, 0.1)   # initialization
 
     def forward(self, x):
@@ -89,7 +89,7 @@ class DQN(object):
         q_eval = self.eval_net(b_s).gather(1, b_a )# shape (batch, 1)//value of the chosen action
         q_next = self.target_net(b_s_).detach()     # detach from graph, don't backpropagate/value of all the actions
         q_target = b_r + GAMMA * q_next.max(1)[0].view(BATCH_SIZE, 1)   # shape (batch, 1)
-        #print("b_a=",b_a)
+        # print("b_a=",b_a)
         #print("q_eval=",q_eval)
         #print("q_target=",q_target)
         loss = self.loss_func(q_eval, q_target)
@@ -102,7 +102,7 @@ class DQN(object):
 dqn = DQN()
 costs=[]
 print('\nCollecting experience...')
-for i in range(0, N_ITERATION):
+for i_iteration in range(0,1):
     dqn.cost=[]
     for i_episode in range(N_EPISODE):
         str_filename="dataHorizon/outNorm/up_"+str(i_episode)+".csv"
@@ -131,15 +131,17 @@ for i in range(0, N_ITERATION):
             if dqn.memory_counter > MEMORY_CAPACITY:
                 dqn.learn()
                 #print("cost=",np.sum(dqn.cost))
-                print('Ep: ', i_episode,
-                    '| Ep_r: ', r)
+                print('Iteration: ', i_iteration,'| Ep: ', i_episode,
+                    '| Ep_r: ', r,'Learning Rate: ', LR)
+                LR=LR-0.000000001
                 #print("weight=",dqn.target_net.fc1.weight)
 
             s = s_next
 
     costs.append(np.mean(dqn.cost))
     print(costs)
-
+    if(np.mean(dqn.cost)<=0.025):
+        break
 
 torch.save(dqn.eval_net, 'SavedNetwork/'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'DQN_eval_net.pkl')
 torch.save(dqn.target_net, 'SavedNetwork/'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'DQN_target_net.pkl')
@@ -149,5 +151,7 @@ log.close()
 plt.plot(costs)
 plt.ylabel('cost')
 plt.xlabel('iterations')
+fig = plt.gcf()
 plt.show()
+fig.savefig('image/'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'DQN.png', dpi=200)
 

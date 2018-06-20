@@ -26,11 +26,11 @@ N_NEURAL=32
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
-        self.fc1 = nn.Linear(N_STATES, N_NEURAL)
+        self.fc1 = nn.Linear(N_STATES, 32)
         self.fc1.weight.data.normal_(0, 0.1)   # initialization
-        self.fc2 = nn.Linear(N_NEURAL, N_NEURAL)
+        self.fc2 = nn.Linear(32, 16)
         self.fc2.weight.data.normal_(0, 0.1)   # initialization
-        self.out = nn.Linear(N_NEURAL, N_ACTIONS)
+        self.out = nn.Linear(16, N_ACTIONS)
         self.out.weight.data.normal_(0, 0.1)   # initialization
 
     def forward(self, x):
@@ -107,7 +107,7 @@ class DQN(object):
 dqn = DQN()
 costs=[]
 print('\nCollecting experience...')
-for i in range(0, N_ITERATION):
+for i_iteration in range(0, 1):
     for i_episode in range(N_EPISODE):
         str_filename="dataHorizon/outNorm/up_"+str(i_episode)+".csv"
         try:
@@ -135,21 +135,25 @@ for i in range(0, N_ITERATION):
 
             if dqn.memory_counter > MEMORY_CAPACITY:
                 dqn.learn()
-                print('Ep: ', i_episode,
-                    '| Ep_r: ', r)
+                print('Iteration: ', i_iteration,'| Ep: ', i_episode,
+                    '| Ep_r: ', r,'Learning Rate: ', LR)
+                LR=LR-0.000000001
                 #print("weight=",dqn.target_net.fc1.weight)
 
             s = s_next
     costs.append(np.mean(dqn.cost))
     print(costs)
-
+    if(np.mean(dqn.cost)<=0.025):
+        break
 
 torch.save(dqn.eval_net,'SavedNetwork/'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'DoubleDQN_eval_net.pkl')
-torch.save(dqn.target_net, 'SavedNetwork/'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+ 'DoubbleDQN_target_net.pkl')
+torch.save(dqn.target_net, 'SavedNetwork/'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+ 'DoubleDQN_target_net.pkl')
 log = open('Log/log'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'DoubleDQN.txt', 'w')
 log.write("cost value="+str(costs))
 log.close()
 plt.plot(costs)
 plt.ylabel('cost')
 plt.xlabel('iterations')
+fig = plt.gcf()
 plt.show()
+fig.savefig('image/'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'DoubleDQN.png', dpi=200)

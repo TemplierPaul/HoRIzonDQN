@@ -136,11 +136,11 @@ class Memory(object):  # stored as ( s, a, r, s_ ) in SumTree
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
-        self.fc1 = nn.Linear(N_STATES, N_NEURAL)
+        self.fc1 = nn.Linear(N_STATES, 32)
         self.fc1.weight.data.normal_(0, 0.1)   # initialization
-        self.fc2 = nn.Linear(N_NEURAL, N_NEURAL)
+        self.fc2 = nn.Linear(32, 16)
         self.fc2.weight.data.normal_(0, 0.1)   # initialization
-        self.out = nn.Linear(N_NEURAL, N_ACTIONS)
+        self.out = nn.Linear(16, N_ACTIONS)
         self.out.weight.data.normal_(0, 0.1)   # initialization
 
     def forward(self, x):
@@ -274,4 +274,6 @@ log.close()
 plt.plot(costs)
 plt.ylabel('cost')
 plt.xlabel('iterations')
+fig = plt.gcf()
 plt.show()
+fig.savefig('image/'+time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())+'DoubleDQNwithPrio.png', dpi=200)
