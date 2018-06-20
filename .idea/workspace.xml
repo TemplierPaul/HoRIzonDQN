@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="004a9823-bfef-4d7e-b9d9-17b50b94a9b3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/comp0618.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/viewPKL.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/out/outReduit/Dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataHorizon/out/traitementReduit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DQN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoubleDQN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleDQN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DoubleDQNwithPrioritzed.py" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleDQNwithPrioritzed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataHorizon/traitement.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataHorizon/traitement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataHorizon/traitementAvecNormalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataHorizon/traitementAvecNormalization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandaTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/pandaTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataHorizon/out/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dataHorizon/out/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataHorizon/outNorm/.~lock.up_8.csv#" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/verifyNetwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/verifyNetwork.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,12 +22,15 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/HRIDQN$pandaTest.coverage" NAME="pandaTest Coverage Results" MODIFIED="1529331941373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HRIDQN$DoubleDQN.coverage" NAME="DoubleDQN Coverage Results" MODIFIED="1529480112989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/HRIDQN$verifyNetwork.coverage" NAME="verifyNetwork Coverage Results" MODIFIED="1529485058427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HRIDQN$verifyNetwork.coverage" NAME="verifyNetwork Coverage Results" MODIFIED="1529507310231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HRIDQN$simulator.coverage" NAME="simulator Coverage Results" MODIFIED="1529530009096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HRIDQN$traitementAvecNormalization.coverage" NAME="traitementAvecNormalization Coverage Results" MODIFIED="1529326836718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataHorizon" />
-    <SUITE FILE_PATH="coverage/HRIDQN$DoubleDQNwithPrioritzed.coverage" NAME="DoubleDQNwithPrioritzed Coverage Results" MODIFIED="1529260873644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HRIDQN$DoubleDQNwithPrioritzed.coverage" NAME="DoubleDQNwithPrioritzed Coverage Results" MODIFIED="1529505255673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HRIDQN$Dataset.coverage" NAME="Dataset Coverage Results" MODIFIED="1529507706210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataHorizon/out/outReduit" />
     <SUITE FILE_PATH="coverage/HRIDQN$osTest.coverage" NAME="osTest Coverage Results" MODIFIED="1527666834863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataHorizon" />
-    <SUITE FILE_PATH="coverage/HRIDQN$dqn.coverage" NAME="dqn Coverage Results" MODIFIED="1529484807237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/HRIDQN$traitement.coverage" NAME="traitement Coverage Results" MODIFIED="1528190143829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataHorizon" />
+    <SUITE FILE_PATH="coverage/HRIDQN$dqn.coverage" NAME="dqn Coverage Results" MODIFIED="1529504697623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HRIDQN$traitement.coverage" NAME="traitement Coverage Results" MODIFIED="1529499837220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataHorizon" />
+    <SUITE FILE_PATH="coverage/HRIDQN$traitementReduit.coverage" NAME="traitementReduit Coverage Results" MODIFIED="1529506931462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataHorizon/out" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -46,47 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DQN.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DQN.py">
+      <file leaf-file-name="simulator.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/simulator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DoubleDQNwithPrioritzed.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DoubleDQNwithPrioritzed.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="253" selection-start-line="253" selection-end-line="253" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DoubleDQN.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DoubleDQN.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="55" column="31" lean-forward="true" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="verifyNetwork.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/verifyNetwork.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            <state relative-caret-position="223">
+              <caret line="117" column="15" lean-forward="true" selection-start-line="117" selection-start-column="15" selection-end-line="117" selection-end-column="15" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -123,15 +89,18 @@
         <option value="$PROJECT_DIR$/dataHorizon/osTest.py" />
         <option value="$PROJECT_DIR$/python.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/DoubleDQNwithPrioritzed.py" />
         <option value="$PROJECT_DIR$/viewPKL.py" />
         <option value="$PROJECT_DIR$/dataHorizon/traitementAvecNormalization.py" />
         <option value="$PROJECT_DIR$/dataHorizon/traitement.py" />
         <option value="$PROJECT_DIR$/Log/log2018-06-18-01-11-37DQN.txt" />
         <option value="$PROJECT_DIR$/pandaTest.py" />
         <option value="$PROJECT_DIR$/DoubleDQN.py" />
-        <option value="$PROJECT_DIR$/verifyNetwork.py" />
+        <option value="$PROJECT_DIR$/dataHorizon/out/outReduit/Dataset.py" />
         <option value="$PROJECT_DIR$/DQN.py" />
+        <option value="$PROJECT_DIR$/DoubleDQNwithPrioritzed.py" />
+        <option value="$PROJECT_DIR$/dataHorizon/out/traitementReduit.py" />
+        <option value="$PROJECT_DIR$/verifyNetwork.py" />
+        <option value="$PROJECT_DIR$/simulator.py" />
       </list>
     </option>
   </component>
@@ -142,10 +111,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="61" />
+    <option name="x" value="180" />
     <option name="y" value="23" />
-    <option name="width" value="1379" />
-    <option name="height" value="877" />
+    <option name="width" value="1670" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -153,6 +122,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,31 +130,10 @@
               <item name="HRIDQN" type="b2602c69:ProjectViewProjectNode" />
               <item name="HRIDQN" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="HRIDQN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HRIDQN" type="462c0819:PsiDirectoryNode" />
-              <item name="dataHorizon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HRIDQN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HRIDQN" type="462c0819:PsiDirectoryNode" />
-              <item name="image" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HRIDQN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HRIDQN" type="462c0819:PsiDirectoryNode" />
-              <item name="Log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HRIDQN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HRIDQN" type="462c0819:PsiDirectoryNode" />
-              <item name="SavedNetwork" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -216,8 +165,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.verifyNetwork">
-    <configuration name="DoubleDQN" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.simulator">
+    <configuration name="Dataset" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="HRIDQN" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -225,12 +174,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dataHorizon/out/outReduit" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DoubleDQN.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataHorizon/out/outReduit/Dataset.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -274,7 +223,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="pandaTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="simulator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="HRIDQN" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -287,13 +236,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pandaTest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/simulator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="traitementAvecNormalization" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="traitementReduit" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="HRIDQN" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -301,12 +250,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dataHorizon" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dataHorizon/out" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataHorizon/traitementAvecNormalization.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataHorizon/out/traitementReduit.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -334,18 +283,18 @@
     <list>
       <item itemvalue="Python.verifyNetwork" />
       <item itemvalue="Python.dqn" />
-      <item itemvalue="Python.DoubleDQN" />
+      <item itemvalue="Python.traitementReduit" />
       <item itemvalue="Python.DoubleDQNwithPrioritzed" />
-      <item itemvalue="Python.pandaTest" />
-      <item itemvalue="Python.traitementAvecNormalization" />
+      <item itemvalue="Python.Dataset" />
+      <item itemvalue="Python.simulator" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.dqn" />
-        <item itemvalue="Python.DoubleDQN" />
-        <item itemvalue="Python.pandaTest" />
-        <item itemvalue="Python.traitementAvecNormalization" />
+        <item itemvalue="Python.simulator" />
+        <item itemvalue="Python.Dataset" />
+        <item itemvalue="Python.traitementReduit" />
         <item itemvalue="Python.DoubleDQNwithPrioritzed" />
+        <item itemvalue="Python.dqn" />
       </list>
     </recent_temporary>
   </component>
@@ -372,24 +321,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="61" y="23" width="1379" height="877" extended-state="0" />
+    <frame x="180" y="23" width="1670" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32820514" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" x="0" y="0" width="294" height="677" id="Documentation" order="5" sideWeight="0.18249534" side_tool="true" visible="true" weight="0.3103964" />
+      <window_info anchor="right" x="0" y="0" width="294" height="677" id="Documentation" order="5" sideWeight="0.18791947" side_tool="true" visible="true" weight="0.25491402" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31153846" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32820514" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32820514" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5338895" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32820514" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27748692" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23157248" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" sideWeight="0.4981685" weight="0.32988167" />
-      <window_info anchor="right" id="SciView" order="4" sideWeight="0.81750464" visible="true" weight="0.3103964" />
+      <window_info anchor="right" id="SciView" order="4" sideWeight="0.81208056" visible="true" weight="0.25491402" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -411,53 +360,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DQN.py">
+    <entry file="file://$PROJECT_DIR$/simulator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
-          <caret line="133" selection-start-line="133" selection-end-line="135" selection-end-column="33" />
+        <state relative-caret-position="1365">
+          <caret line="97" column="5" lean-forward="true" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DoubleDQNwithPrioritzed.py">
+    <entry file="file://$PROJECT_DIR$/dataHorizon/out/outReduit/Dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3690">
-          <caret line="253" selection-start-line="253" selection-end-line="253" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/verifyNetwork.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DoubleDQN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="115" column="20" lean-forward="true" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DQN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1845">
-          <caret line="130" column="32" selection-start-line="130" selection-start-column="32" selection-end-line="130" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -465,9 +381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
           <caret line="69" column="10" lean-forward="true" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -475,9 +388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2190">
           <caret line="153" column="93" lean-forward="true" selection-start-line="153" selection-start-column="93" selection-end-line="153" selection-end-column="93" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -709,54 +619,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataHorizon/traitement.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="131" selection-start-line="131" selection-end-line="131" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataHorizon/traitementAvecNormalization.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="141" column="38" selection-start-line="141" selection-start-column="38" selection-end-line="141" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/verifyNetwork.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="233">
+          <caret line="135" column="41" lean-forward="true" selection-start-line="135" selection-start-column="41" selection-end-line="135" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DoubleDQN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="55" column="31" lean-forward="true" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="310">
+          <caret line="114" selection-start-line="114" selection-end-line="115" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verifyNetwork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="62" column="21" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataHorizon/out/traitementReduit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DoubleDQNwithPrioritzed.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="253" selection-start-line="253" selection-end-line="253" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="56">
+          <caret line="246" column="40" selection-start-line="246" selection-start-column="40" selection-end-line="246" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DQN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        <state relative-caret-position="188">
+          <caret line="90" column="35" selection-start-line="90" selection-start-column="35" selection-end-line="90" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataHorizon/traitement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataHorizon/out/outReduit/Dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="117" column="15" lean-forward="true" selection-start-line="117" selection-start-column="15" selection-end-line="117" selection-end-column="15" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>

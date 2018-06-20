@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import time
 
 # Hyper Parameters
-EPI_FILE = pd.read_csv("dataHorizon/outNorm/up_0.csv")
+EPI_FILE = pd.read_csv("dataHorizon/out/up_0.csv")
 N_ACTIONS = 10
 N_STATES = EPI_FILE.columns.size - N_ACTIONS - 1
 print("N_ACTIONS:", N_ACTIONS)
@@ -229,9 +229,9 @@ dqn = DQN()
 costs=[]
 print('\nCollecting experience...')
 
-for i in range(0, N_ITERATION):
+for i in range(0, 1):
     for i_episode in range(N_EPISODE):
-        str_filename="dataHorizon/outNorm/up_"+str(i_episode)+".csv"
+        str_filename="dataHorizon/out/up_"+str(i_episode)+".csv"
         try:
             EPI_FILE = pd.read_csv(str_filename)
         except FileNotFoundError:

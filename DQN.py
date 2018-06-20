@@ -94,7 +94,7 @@ class DQN(object):
         #print("q_target=",q_target)
         loss = self.loss_func(q_eval, q_target)
         self.cost.append(loss.detach().numpy())
-        #print("loss=",loss)
+        print("loss=",loss)
         self.optimizer.zero_grad()
         loss.backward()
         self.optimizer.step()

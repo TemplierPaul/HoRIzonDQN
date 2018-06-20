@@ -4,9 +4,10 @@ from torch.autograd import Variable
 import torch.nn.functional as F
 import numpy as np
 import pandas as pd
+import math
 
 # Hyper Parameters
-EPI_FILE = pd.read_csv("dataHorizon/outNorm/up_0.csv")
+EPI_FILE = pd.read_csv("dataHorizon/out/up_0.csv")
 N_ACTIONS = 10
 N_STATES = EPI_FILE.columns.size - N_ACTIONS - 1
 print("N_ACTIONS:", N_ACTIONS)
@@ -19,7 +20,7 @@ MEMORY_CAPACITY = 1000
 N_EPISODE=2000   #Number of files read (number of experiments)
 N_EXP_TOL=400    #If the game is running too long, go to the next experiment(temporarily not considered)
 N_NEURAL=32
-N_EPISODE=660
+N_EPISODE=1100
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
@@ -66,10 +67,15 @@ class SavedNet(object):
         print("Chosen Action=",np.argmax(q_next))
         return (np.argmax(q_next)==orig_action)
 
+    def state_transition(self,s):
+        print(s[1],s[2],s[3],s[4])
+        s_reduit=np.array([s[1],int(s[2]),int(s[3]),int(s[4]*6/math.pi)])
+        return s_reduit
+
 NetToVerify=SavedNet()
 TestAcc=[]
-for i_episode in range(660,1300):
-    str_filename = "dataHorizon/outNorm/up_" + str(i_episode) + ".csv"
+for i_episode in range(1000,1300):
+    str_filename = "dataHorizon/out/up_" + str(i_episode) + ".csv"
     try:
         EPI_FILE = pd.read_csv(str_filename)
     except FileNotFoundError:
@@ -93,6 +99,7 @@ for i_episode in range(660,1300):
         # if s_i>N_EXP_TOL:
         #     break
         s_next = np.array(EPI_FILE.ix[s_i, 0:N_STATES])
+        print(NetToVerify.state_transition(s_next))
         print('Ep: ', i_episode)
 
         s = s_next
