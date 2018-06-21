@@ -9,7 +9,7 @@ from random import *
 # Hyper Parameters
 EPI_FILE = pd.read_csv("dataHorizon/out/up_2.csv")
 N_ACTIONS = 10
-N_STATES = EPI_FILE.columns.size - N_ACTIONS - 1
+N_STATES = 87
 print("N_ACTIONS:", N_ACTIONS)
 BATCH_SIZE = 32   # Number of samples selected per study
 LR = 0.01                   # learning rate
@@ -24,11 +24,11 @@ N_EXP_TOL=400    #If the game is running too long, go to the next experiment(tem
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
-        self.fc1 = nn.Linear(N_STATES, N_NEURAL)
+        self.fc1 = nn.Linear(N_STATES, 64)
         self.fc1.weight.data.normal_(0, 0.1)  # initialization
-        self.fc2 = nn.Linear(N_NEURAL, N_NEURAL)
+        self.fc2 = nn.Linear(64, 32)
         self.fc2.weight.data.normal_(0, 0.1)  # initialization
-        self.out = nn.Linear(N_NEURAL, N_ACTIONS)
+        self.out = nn.Linear(32, N_ACTIONS)
         self.out.weight.data.normal_(0, 0.1)  # initialization
 
     def forward(self, x):
@@ -44,7 +44,7 @@ class SavedNet(object):
 
     def __init__(self):
         self.net = Net()
-        net= torch.load('SavedNetwork/2018-06-20-15-34-46-Conv_CPU_target.pkl')
+        net= torch.load('SavedNetwork/2018-06-21-11-59-08DQN_target_net.pkl')
 
     def orig_action(self, x):
         action=np.array(EPI_FILE.ix[x, N_STATES :N_STATES+N_ACTIONS])
@@ -135,20 +135,23 @@ def check_accuracy(s, a):
 def main_test(n):
     dqn = SavedNet()
     log = open('log_test.txt', 'w')
+    action=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     action_pb = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-
     for i in range (n):
         L = create_state()
         s = Variable(torch.FloatTensor(L))
-        Q = dqn(s)
-        a = Q.index(max(Q))
+        Q = dqn.net(s)
+        print("Q=",Q)
+        a = Q.argmax()
+        action[a]= action[a]+1
         ver = check_accuracy(s, a)
         for j in range (len(action_pb)):
             action_pb[j] = action_pb[j] + ver[j]
         if sum(ver) != 0:
             log.write (str(L))
         print(i, '/', n, ":", str(sum(ver)))
-    print (str(action_pb))
+    print ('Actions : ', str(action))
+    print ('Problems : ', str(action_pb))
     log.write(str(action_pb))
     log.close()
 

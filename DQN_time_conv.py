@@ -20,24 +20,24 @@ EPSILON = 0.9               # greedy policy
 GAMMA = 0.9                 # reward discount
 TARGET_REPLACE_ITER = 10   # target update frequency
 MEMORY_CAPACITY = 1000
-N_EPISODE=20#Number of files read (number of experiments)
+N_EPISODE=600#Number of files read (number of experiments)
 N_EXP_TOL=400    #If the game is running too long, go to the next experiment(temporarily not considered)
-N_ITERATION=10
+N_ITERATION=30
 N_NEURAL=32
 
-N_PAST_STATES = 10 #number of states taken for history in convolution
+N_PAST_STATES = 5 #number of states taken for history in convolution
 N_CONV_OUT = 10
-N_LINEAR_IN = 400
+N_LINEAR_IN = 840
 
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
 
         self.conv = torch.nn.Sequential()
-        self.conv.add_module("conv_1", torch.nn.Conv2d(1, 100, kernel_size=3))
-        self.conv.add_module("maxpool_1", torch.nn.MaxPool2d(kernel_size=2))
+        self.conv.add_module("conv_1", torch.nn.Conv2d(1, 100, kernel_size=2))
+        self.conv.add_module("maxpool_1", torch.nn.MaxPool2d(kernel_size=2, stride=1))
         self.conv.add_module("relu_1", torch.nn.ReLU())
-        self.conv.add_module("conv_2", torch.nn.Conv2d(100, 20, kernel_size=3))
+        self.conv.add_module("conv_2", torch.nn.Conv2d(100, 20, kernel_size=2))
         self.conv.add_module("dropout_2", torch.nn.Dropout())
         self.conv.add_module("maxpool_2", torch.nn.MaxPool2d(kernel_size=2))
         self.conv.add_module("relu_2", torch.nn.ReLU())
@@ -187,7 +187,7 @@ for i in range(0, N_ITERATION):
                 dqn.learn()
                 print("cost=",np.sum(dqn.cost))
                 print('Ep: ', i_episode,
-                    '| Ep_r: ', r, '|Time: ', time.time()-T_START)
+                    '| Ep_r: ', r, '| Iter : ', i, '/', N_ITERATION, '| Time: ', time.time()-T_START)
                 # print("weight=",dqn.target_net.fc1.weight)
 
             s = s_next
