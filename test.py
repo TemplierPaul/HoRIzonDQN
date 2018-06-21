@@ -150,6 +150,12 @@ def main_test(n):
         if sum(ver) != 0:
             log.write (str(L))
         print(i, '/', n, ":", str(sum(ver)))
+    stats = []
+    for i in range (len(action)):
+        if (action[i])!= 0:
+            stats.append(100*pb_action[i]/action[i])
+        else :
+            stats.append(0)
     print ('Actions : ', str(action))
     print ('Problems : ', str(action_pb))
     log.write(str(action_pb))
